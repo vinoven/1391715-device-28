@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [mikhail sechin](https://up.htmlacademy.ru/htmlcss/28/user/1391715).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
