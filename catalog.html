@@ -36,7 +36,7 @@
         <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Моноподы для селфи</a></li>
       </ul>
     </section>
-    <section class="filter">
+    <aside class="filter">
       <h2 class="filter__title">Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset>
@@ -61,19 +61,19 @@
         </fieldset>
         <button type="submit">Показать</button>
       </form>
-    </section>
+    </aside>
 
 
-    <section class="sort">
+    <aside class="sort">
       <h2 class="sort__title">Сортировка:</h2>
-      <a href="" class="sort__link">По цене</a>
-      <a href="" class="sort__link">По типу</a>
-      <a href="" class="sort__link">По популярности</a>
-
-      <a href="" class="sort__link">По восходящей</a>
-      <a href="" class="sort__link">По нисходящей</a>
-      <!-- ВОПРОС Необходимо ли группу ссылок оборачивать в ul>li или достаточно просто ссылок? На что они должны ссылаться?  -->
-    </section>
+      <ul class="sort__list">
+        <li class="sort__item"><a href="catalog.html" class="sort__link">По цене</a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link">По типу</a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link">По популярности</a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link">По возрастанию</a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link">По убыванию</a></li>
+      </ul>
+    </aside>
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
@@ -108,11 +108,11 @@
     <section class="pagination">
       <h2 class="visually-hidden">Навигация по страницам каталога</h2>
       <button type="button">Назад</button>
-     <ul class="pagination__list">
-       <li class="pagination__item"><a href="page-1.html" class="pagination__link">1</a></li>
-       <li class="pagination__item"><a href="page-2.html" class="pagination__link">2</a></li>
-       <li class="pagination__item"><a href="page-3.html" class="pagination__link">3</a></li>
-     </ul>
+      <ul class="pagination__list">
+        <li class="pagination__item"><a href="page-1.html" class="pagination__link">1</a></li>
+        <li class="pagination__item"><a href="page-2.html" class="pagination__link">2</a></li>
+        <li class="pagination__item"><a href="page-3.html" class="pagination__link">3</a></li>
+      </ul>
       <button type="button">Вперед</button>
     </section>
   </main>
