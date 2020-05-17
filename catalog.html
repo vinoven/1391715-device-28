@@ -29,14 +29,54 @@
   <main>
     <h2 class="title">Моноподы для селфи</h2>
     <section class="breadcrumbs">
+      <h2 class="visually-hidden">Навигация по каталогу</h2>
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
         <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Каталог товаров</a></li>
         <li class="breadcrumbs__item"><a href="catalog.html" class="breadcrumbs__link">Моноподы для селфи</a></li>
       </ul>
     </section>
-    <section class="filter"></section>
+    <section class="filter">
+      <h2 class="filter__title">Фильтр:</h2>
+      <form action="#" method="GET">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <span>от 0</span>
+          <label for="cost"><input type="range" name="cost" id="cost" step="100" min="0" max="7500"
+              value="5000"></label>
+          <span>до 5000</span>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <label for="black"><input type="checkbox" name="black" id="black" checked> Чёрный</label>
+          <label for="white"><input type="checkbox" name="white" id="white"> Белый</label>
+          <label for="blue"><input type="checkbox" name="blue" id="blue" checked> Синий</label>
+          <label for="red"><input type="checkbox" name="red" id="red" checked> Красный</label>
+          <label for="pink"><input type="checkbox" name="pink" id="pink"> Розовый</label>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <label for="bt-true"><input type="radio" name="bluetooth" id="bt-true" value="true" checked> Есть</label>
+          <label for="bt-false"><input type="radio" name="bluetooth" id="bt-false" value="false"> Нет</label>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+
+    <section class="sort">
+      <h2 class="sort__title">Сортировка:</h2>
+      <a href="" class="sort__link">По цене</a>
+      <a href="" class="sort__link">По типу</a>
+      <a href="" class="sort__link">По популярности</a>
+
+      <a href="" class="sort__link">По восходящей</a>
+      <a href="" class="sort__link">По нисходящей</a>
+      <!-- ВОПРОС Необходимо ли группу ссылок оборачивать в ul>li или достаточно просто ссылок? На что они должны ссылаться?  -->
+    </section>
+
     <section class="catalog">
+      <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение товара"
@@ -51,19 +91,29 @@
             селфи-палка </h3>
           <span class="catalog__item-price">1 500 руб.</span>
         </li>
-        <li class="catalog__item"><img src="" alt="" class="catalog__item-poster">
+        <li class="catalog__item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение товара"
             class="catalog__item-poster">
           <h3 class="catalog__item-header">Непотопляемая селфи-палка</h3>
           <span class="catalog__item-price">2 500 руб.</span>
         </li>
-        <li class="catalog__item"><img src="" alt="" class="catalog__item-poster">
+        <li class="catalog__item">
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение товара"
             class="catalog__item-poster">
           <h3 class="catalog__item-header">Селфи-палка «Следуй за мной»</h3>
           <span class="catalog__item-price">4 900 руб.</span>
         </li>
       </ul>
+    </section>
+    <section class="pagination">
+      <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+      <button type="button">Назад</button>
+     <ul class="pagination__list">
+       <li class="pagination__item"><a href="page-1.html" class="pagination__link">1</a></li>
+       <li class="pagination__item"><a href="page-2.html" class="pagination__link">2</a></li>
+       <li class="pagination__item"><a href="page-3.html" class="pagination__link">3</a></li>
+     </ul>
+      <button type="button">Вперед</button>
     </section>
   </main>
   <footer class="page-footer">
