@@ -183,9 +183,32 @@
       <p class="text-paragraph">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
       <a href="https://yandex.ru/maps/" class="contacts__map-link" target="_blank"><img src="img/content/map-1.png"
-          width="560" height="222" alt="Офис компании - г. Москва, ул. Строителей, 15" class="contacts__map-picture"></a>
+          width="560" height="222" alt="Офис компании - г. Москва, ул. Строителей, 15"
+          class="contacts__map-picture"></a>
       <a href="feedback.html" class="feedback__link">Напишите нам</a>
     </section>
+
+    <section class="feedback">
+      <form action="https://echo.htmlacademy.ru" method="form" class="feedback__form">
+        <p>
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="feeback-text">Текст письма:</label>
+          <textarea name="feeback-text" id="feeback-text" cols="20" rows="5"
+            placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button" class="feedback__close-form"><span class="visually-hidden">Закрыть форму обратной
+          связи</span></button>
+    </section>
+
   </main>
   <footer class="page-footer">
     <a href="./index.html" class="logo__link"><img src="img/content/logo-device.svg" width="164" height="35"
