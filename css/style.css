@@ -82,10 +82,6 @@ img {
 }
 
 /* Специфичные стили */
-.logo__picture:hover {
-  fill-opacity: .3;
-}
-
 
 .user-menu__link,
 .text-paragraph {
