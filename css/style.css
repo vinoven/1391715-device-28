@@ -37,3 +37,17 @@
        url('../fonts/gilroyextrabold.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/gilroyextrabold.woff') format('woff'); /* Modern Browsers */
 }
+
+/* variables */
+/* basic colors */
+:root {
+ --basic-black: #000000;
+ --basic-dark: #363636;
+ --basic-grey: #464646;
+ --basic-half-grey: #7E7E7E;
+ --basic-grey-light: #E5E5E5;
+ --basic-white: #FFFFFF;
+ --special-yellow-dark: #F0C52E;
+ --special-yellow: #F7E296;
+ --special-green: #91C92F;
+}
