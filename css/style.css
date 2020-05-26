@@ -4,8 +4,10 @@
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'),
-       url('../fonts/opensanslight.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/opensanslight.woff') format('woff'); /* Modern Browsers */
+    url('../fonts/opensanslight.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/opensanslight.woff') format('woff');
+  /* Modern Browsers */
 }
 
 /* open-sans-regular */
@@ -14,8 +16,10 @@
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('../fonts/opensans.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/opensans.woff') format('woff'); /* Modern Browsers */
+    url('../fonts/opensans.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/opensans.woff') format('woff');
+  /* Modern Browsers */
 }
 
 /* gilroy-300 */
@@ -24,8 +28,8 @@
   font-style: normal;
   font-weight: 300;
   src: local('Gilroy Light'), local('Gilroy-Light'),
-       url('../fonts/gilroylight.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/gilroylight.woff') format('woff'); /* Modern Browsers */
+    url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
 }
 
 /* gilroy-800 */
@@ -34,21 +38,139 @@
   font-style: normal;
   font-weight: 800;
   src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-       url('../fonts/gilroyextrabold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/gilroyextrabold.woff') format('woff'); /* Modern Browsers */
+    url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+
 }
 
 /* variables */
 /* basic colors */
 :root {
- --basic-black: #000000;
- --basic-dark: #363636;
- --basic-grey: #464646;
- --basic-half-grey: #7E7E7E;
- --basic-grey-light: #E5E5E5;
- --basic-white: #FFFFFF;
- --special-yellow-dark: #F0C52E;
- --special-yellow: #F7E296;
- --special-green: #91C92F;
- --status-warning: #F6DADA;
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --basic-white: #FFFFFF;
+
+  --special-yellow-dark: #F0C52E;
+  --special-yellow: #F7E296;
+  --special-green: #91C92F;
+
+  --status-warning: #F6DADA;
+}
+
+/* Глобальные стили */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy, Verdana, sans-serif;
+  font-size: 15px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Специфичные стили */
+.logo__picture:hover {
+  fill-opacity: .3;
+}
+
+
+.user-menu__link,
+.text-paragraph {
+  font-family: 'Open Sans';
+}
+
+.page-header {
+  height: 186px;
+  background-color: var(--special-yellow);
+}
+
+.user-menu__link {
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.site-navigation__link,
+.about__link,
+.feedback__link {
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.site-navigation__link:hover,
+.user-menu__link:hover {
+  opacity: .7;
+}
+
+.site-navigation__link:focus,
+.user-menu__link:focus {
+  opacity: .3;
+}
+
+.title {
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text-paragraph {
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.partners__list {
+  list-style-type: circle;
+}
+
+.partners__item {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.link-container:hover {
+  display: inline-block;
+  background-color: var(--special-yellow-dark);
+}
+
+.about__link:active,
+.feedback__link:active {
+  background-color: var(--special-yellow-dark);
+}
+
+
+
+
+
+
+
+
+/* Временные стили для наглядности */
+.user-menu__item,
+.site-navigation__item {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+a:visited {
+  color: var(--basic-black);
 }
