@@ -141,22 +141,10 @@ img {
 }
 
 .link-container:hover {
-  display: inline-block;
   background-color: var(--special-yellow-dark);
 }
 
 .about__link:active,
 .feedback__link:active {
   background-color: var(--special-yellow-dark);
-}
-
-/* Временные стили для наглядности */
-.user-menu__item,
-.site-navigation__item {
-  display: inline-block;
-  margin-right: 40px;
-}
-
-a:visited {
-  color: var(--basic-black);
 }
