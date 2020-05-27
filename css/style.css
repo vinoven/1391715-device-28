@@ -66,7 +66,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: Gilroy, Verdana, sans-serif;
+  font-family: 'Gilroy', 'Verdana', sans-serif;
   font-size: 15px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -152,13 +152,6 @@ img {
 .feedback__link:active {
   background-color: var(--special-yellow-dark);
 }
-
-
-
-
-
-
-
 
 /* Временные стили для наглядности */
 .user-menu__item,
