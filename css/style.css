@@ -85,7 +85,7 @@ img {
 
 .user-menu__link,
 .text-paragraph {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Verdana', sans-serif;
 }
 
 .page-header {
