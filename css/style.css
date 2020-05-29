@@ -58,6 +58,8 @@
   --special-green: #91C92F;
 
   --status-warning: #F6DADA;
+
+  --form-disabled: #A6A6A6;
 }
 
 /* Глобальные стили */
@@ -104,9 +106,18 @@ img {
 .search-field {
   background-color: transparent;
   border: 0;
-  font-family: 'Open Sans', 'Verdana', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+}
+
+.reversed-fader {
+  opacity: 0.3;
+}
+
+.reversed-fader:hover {
+  opacity: 0.7;
+}
+
+.reversed-fader:active {
+  opacity: 1.0;
 }
 
 .search-field::placeholder {
@@ -125,7 +136,10 @@ img {
 .user-menu__link,
 .text-paragraph,
 .footer__address,
-.tel {
+.tel,
+.search-field,
+.breadcrumbs__link,
+.catalog__item-to-compare {
   font-family: 'Open Sans', 'Verdana', sans-serif;
   font-weight: 300;
 }
@@ -136,10 +150,13 @@ img {
 
 .site-navigation__link,
 .about__link,
-.feedback__link {
+.feedback__link,
+.catalog__item-to-cart,
+.filter__submit-btn {
   color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -148,14 +165,32 @@ img {
   opacity: 0.6;
 }
 
-.sync-fader:focus {
+.sync-fader:focus,
+.sync-fader:active {
   opacity: 0.3;
 }
 
 .title {
   font-size: 47px;
   line-height: 58px;
+}
+
+section .title {
   letter-spacing: 0.2em;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__link:active {
+  opacity: 0.1;
 }
 
 .text-paragraph {
@@ -172,17 +207,66 @@ img {
   line-height: 28px;
 }
 
-.link-container:hover {
+.form-label {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form-label-disabled {
+  color: var(--form-disabled);
+}
+
+.filter__submit-btn {
+  border: 0;
+  background-color: transparent;
+}
+
+.link__container:hover {
   background-color: var(--special-yellow-dark);
 }
 
 .about__link:active,
-.feedback__link:active {
+.feedback__link:active,
+.catalog__item-to-cart:active,
+.filter__submit-btn:active {
   background-color: var(--special-yellow-dark);
+  opacity: 0.3;
 }
 
 .page-footer {
-background-color: var(--basic-dark);
+  background-color: var(--basic-dark);
+}
+
+.filter {
+  background-color: var(--basic-grey-light);
+}
+
+.catalog__item-header {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.catalog__item-to-compare {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+
+.catalog__item-price {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.catalog__item-tag {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  opacity: 0.3;
 }
 
 .white-text {
@@ -192,14 +276,26 @@ background-color: var(--basic-dark);
 .async-fader {
   opacity: 0.7;
 }
+
 .async-fader:hover {
   opacity: 1.0;
 }
+
 .async-fader:active {
   opacity: 0.3;
 }
 
+.compare-fader {
+  opacity: 0.5;
+}
 
+.compare-fader:hover {
+  opacity: 1.0;
+}
+
+.compare-fader:active {
+  opacity: 0.2;
+}
 
 /* Порядок свойств
 Объявления логически связанных свойств группируются в следующем порядке:
