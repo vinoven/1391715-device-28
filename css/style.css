@@ -75,6 +75,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 img {
@@ -84,42 +85,53 @@ img {
 
 /* Специфичные стили */
 
-input[type="search"] {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.search-icon {
+  background-image: url('../img/decor/search.svg');
+  width: 16px;
+  height: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.search-field {
   background-color: transparent;
   border: 0;
   font-family: 'Open Sans', 'Verdana', sans-serif;
   font-size: 15px;
-  line-height: 20px;
   font-weight: 300;
 }
 
-input[type="search"]::placeholder {
+.search-field::placeholder {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-input[type="search"]:hover::placeholder {
-  color: var(--basic-black);
+.search-field:hover::placeholder {
   opacity: 0.6;
 }
 
-input[type="search"]:focus::placeholder {
-  color: var(--basic-black);
-  opacity: 1;
+.search-field:focus::placeholder {
+  opacity: 1.0;
 }
 
 .user-menu__link,
-.text-paragraph {
+.text-paragraph,
+.footer__address,
+.tel {
   font-family: 'Open Sans', 'Verdana', sans-serif;
+  font-weight: 300;
 }
 
 .page-header {
   background-color: var(--special-yellow);
-}
-
-.user-menu__link {
-  font-weight: 300;
-  line-height: 20px;
 }
 
 .site-navigation__link,
@@ -132,13 +144,11 @@ input[type="search"]:focus::placeholder {
   text-transform: uppercase;
 }
 
-.site-navigation__link:hover,
-.user-menu__link:hover {
-  opacity: 0.7;
+.sync-fader:hover {
+  opacity: 0.6;
 }
 
-.site-navigation__link:focus,
-.user-menu__link:focus {
+.sync-fader:focus {
   opacity: 0.3;
 }
 
@@ -149,7 +159,6 @@ input[type="search"]:focus::placeholder {
 }
 
 .text-paragraph {
-  font-weight: 300;
   line-height: 28px;
 }
 
@@ -172,7 +181,23 @@ input[type="search"]:focus::placeholder {
   background-color: var(--special-yellow-dark);
 }
 
+.page-footer {
+background-color: var(--basic-dark);
+}
 
+.white-text {
+  color: var(--basic-white)
+}
+
+.async-fader {
+  opacity: 0.7;
+}
+.async-fader:hover {
+  opacity: 1.0;
+}
+.async-fader:active {
+  opacity: 0.3;
+}
 
 
 
