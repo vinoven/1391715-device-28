@@ -83,6 +83,15 @@ img {
   color: var(--basic-white)
 }
 
+.extra-bold {
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -146,20 +155,6 @@ img {
 
 .page-header {
   background-color: var(--special-yellow);
-}
-
-.site-navigation__link,
-.about__link,
-.feedback__link,
-.catalog__item-to-cart,
-.filter__submit-btn,
-.black-extra-bold {
-  color: var(--basic-black);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
 }
 
 .sync-fader:hover {
@@ -228,7 +223,7 @@ img {
 
 .about__link:active,
 .feedback__link:active,
-.catalog__item-to-cart:active,
+.catalog__item-to-cart extra-bold:active,
 .filter__submit-btn:active {
   background-color: var(--special-yellow-dark);
   opacity: 0.3;
