@@ -84,7 +84,6 @@ img {
 }
 
 .extra-bold {
-  color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -102,31 +101,21 @@ img {
 
 /* Специфичные стили */
 
-
+.page-header {
+  background-color: var(--special-yellow);
+}
 
 .search-icon {
   background-image: url('../img/decor/search.svg');
   width: 16px;
   height: 16px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .search-field {
   background-color: transparent;
   border: 0;
-}
-
-.reversed-fader {
-  opacity: 0.3;
-}
-
-.reversed-fader:hover {
-  opacity: 0.7;
-}
-
-.reversed-fader:active {
-  opacity: 1.0;
 }
 
 .search-field::placeholder {
@@ -153,16 +142,42 @@ img {
   font-weight: 300;
 }
 
-.page-header {
-  background-color: var(--special-yellow);
+.site-navigation__link:focus,
+.site-navigation__link:active,
+.user-menu__link:focus,
+.user-menu__link:active,
+.sub-menu__link:focus,
+.sub-menu__link:active {
+  opacity: 0.3;
 }
 
-.sync-fader:hover {
+.site-navigation__link:hover,
+.user-menu__link:hover,
+.sub-menu__link:hover {
   opacity: 0.6;
 }
 
-.sync-fader:focus,
-.sync-fader:active {
+.user-menu__link--reversed-opacity {
+  opacity: 0.3;
+}
+
+.user-menu__link--reversed-opacity:hover {
+  opacity: 0.7;
+}
+
+.user-menu__link--reversed-opacity:active {
+  opacity: 1.0;
+}
+
+.user-menu__link--unordered-opacity {
+  opacity: 0.7;
+}
+
+.user-menu__link--unordered-opacity:hover {
+  opacity: 1.0;
+}
+
+.user-menu__link--unordered-opacity:active {
   opacity: 0.3;
 }
 
@@ -208,10 +223,6 @@ img {
   line-height: 19px;
 }
 
-.form-label-disabled {
-  color: var(--form-disabled);
-}
-
 .filter__submit-btn {
   border: 0;
   background-color: transparent;
@@ -223,7 +234,7 @@ img {
 
 .about__link:active,
 .feedback__link:active,
-.catalog__item-to-cart extra-bold:active,
+.catalog__item-to-cart:active,
 .filter__submit-btn:active {
   background-color: var(--special-yellow-dark);
   opacity: 0.3;
@@ -274,17 +285,7 @@ img {
   opacity: 0.3;
 }
 
-.async-fader {
-  opacity: 0.7;
-}
 
-.async-fader:hover {
-  opacity: 1.0;
-}
-
-.async-fader:active {
-  opacity: 0.3;
-}
 
 
 /* Порядок свойств
