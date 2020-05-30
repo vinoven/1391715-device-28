@@ -1,28 +1,21 @@
-﻿/* open-sans-300 */
-@font-face {
+﻿@font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'),
     url('../fonts/opensanslight.woff2') format('woff2'),
-    /* Super Modern Browsers */
     url('../fonts/opensanslight.woff') format('woff');
-  /* Modern Browsers */
 }
 
-/* open-sans-regular */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
     url('../fonts/opensans.woff2') format('woff2'),
-    /* Super Modern Browsers */
     url('../fonts/opensans.woff') format('woff');
-  /* Modern Browsers */
 }
 
-/* gilroy-300 */
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
@@ -32,7 +25,6 @@
     url('../fonts/gilroylight.woff') format('woff');
 }
 
-/* gilroy-800 */
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
@@ -85,7 +77,11 @@ img {
   height: auto;
 }
 
-/* Специфичные стили */
+/* Стили для служебных классов */
+
+.white-text {
+  color: var(--basic-white)
+}
 
 .visually-hidden {
   position: absolute;
@@ -94,6 +90,10 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+/* Специфичные стили */
+
+
 
 .search-icon {
   background-image: url('../img/decor/search.svg');
@@ -136,7 +136,7 @@ img {
 .user-menu__link,
 .text-paragraph,
 .footer__address,
-.tel,
+.footer__phone,
 .search-field,
 .breadcrumbs__link,
 .catalog__item-to-compare {
@@ -152,7 +152,8 @@ img {
 .about__link,
 .feedback__link,
 .catalog__item-to-cart,
-.filter__submit-btn {
+.filter__submit-btn,
+.black-extra-bold {
   color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
@@ -175,7 +176,7 @@ img {
   line-height: 58px;
 }
 
-section .title {
+.title--wide {
   letter-spacing: 0.2em;
 }
 
@@ -252,6 +253,15 @@ section .title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.catalog__item-to-compare:hover {
+  opacity: 1.0;
+}
+
+.catalog__item-to-compare:active {
+  opacity: 0.2;
 }
 
 .catalog__item-price {
@@ -269,10 +279,6 @@ section .title {
   opacity: 0.3;
 }
 
-.white-text {
-  color: var(--basic-white)
-}
-
 .async-fader {
   opacity: 0.7;
 }
@@ -285,17 +291,6 @@ section .title {
   opacity: 0.3;
 }
 
-.compare-fader {
-  opacity: 0.5;
-}
-
-.compare-fader:hover {
-  opacity: 1.0;
-}
-
-.compare-fader:active {
-  opacity: 0.2;
-}
 
 /* Порядок свойств
 Объявления логически связанных свойств группируются в следующем порядке:
