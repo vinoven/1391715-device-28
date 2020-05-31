@@ -81,7 +81,9 @@
       </ul>
     </section>
     <aside class="filter">
-      <h2 class="filter__title">Фильтр:</h2>
+      <div class="filter__header">
+        <h2 class="filter__title extra-bold">Фильтр:</h2>
+      </div>
       <form action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset>
           <legend>Стоимость</legend>
@@ -130,7 +132,7 @@
     </aside>
 
     <aside class="sort">
-      <h2 class="sort__title">Сортировка:</h2>
+      <h2 class="sort__title extra-bold">Сортировка:</h2>
       <ul class="sort__list">
         <li class="sort__item"><a href="catalog.html" class="sort__link">По цене</a></li>
         <li class="sort__item"><a href="catalog.html" class="sort__link">По типу</a></li>
@@ -197,13 +199,17 @@
     </section>
     <section class="pagination">
       <h2 class="visually-hidden">Навигация по страницам каталога</h2>
-      <a class="pagination__btn-prev" aria-label="На предыдущую страницу">Назад</a>
+      <div class="pagination__btn-container">
+        <a class="pagination__btn-prev extra-bold" aria-label="На предыдущую страницу">Назад</a>
+      </div>
       <ul class="pagination__list">
-        <li class="pagination__item"><a href="blank.html" class="pagination__link" aria-label="На страницу">1</a></li>
-        <li class="pagination__item"><a href="blank.html" class="pagination__link" aria-label="На страницу">2</a></li>
-        <li class="pagination__item"><a href="blank.html" class="pagination__link" aria-label="На страницу">3</a></li>
+        <li class="pagination__item"><a href="blank.html" class="pagination__link pagination__link--active extra-bold" aria-label="На страницу">1</a></li>
+        <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold" aria-label="На страницу">2</a></li>
+        <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold" aria-label="На страницу">3</a></li>
       </ul>
-      <a class="pagination__btn-next" aria-label="На следующую страницу">Вперед</a>
+      <div class="pagination__btn-container">
+        <a class="pagination__btn-next extra-bold" aria-label="На следующую страницу">Вперед</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
