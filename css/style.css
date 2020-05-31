@@ -47,6 +47,7 @@
 
   --special-yellow-dark: #F0C52E;
   --special-yellow: #F7E296;
+  --special-yellow-light: #F7E296;
   --special-green: #91C92F;
 
   --status-warning: #F6DADA;
@@ -137,7 +138,9 @@ img {
 .footer__phone,
 .search-field,
 .breadcrumbs__link,
-.catalog__item-to-compare {
+.catalog__item-to-compare,
+.promo-slider__text,
+.services-definition__description  {
   font-family: 'Open Sans', 'Verdana', sans-serif;
   font-weight: 300;
 }
@@ -181,12 +184,15 @@ img {
   opacity: 0.3;
 }
 
-.title {
+.title,
+.promo-slider__title,
+.services-definition__term {
   font-size: 47px;
   line-height: 58px;
 }
 
-.title--wide {
+.title--wide,
+.services-definition__term {
   letter-spacing: 0.2em;
 }
 
@@ -235,7 +241,8 @@ img {
 .about__link:active,
 .feedback__link:active,
 .catalog__item-to-cart:active,
-.filter__submit-btn:active {
+.filter__submit-btn:active,
+.promo-slider__link:active {
   background-color: var(--special-yellow-dark);
   opacity: 0.3;
 }
@@ -285,7 +292,59 @@ img {
   opacity: 0.3;
 }
 
+.promo-slider__definition {
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
 
+.promo-slider__term {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.categories__item-title {
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+.categories__item-title:active {
+  opacity: 0.3;
+}
+
+.services {
+  background-color: var(--basic-grey-light);
+}
+
+.services-definition__term {
+  text-transform: none;
+}
+
+.services-definition__description {
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
+
+
+/* пересмотреть подход после созвона
+========================================
+
+.section-navigation__item-link:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.section-navigation__item-link:active {
+  color: var(--special-yellow);
+  background-color: var(--basic-black);
+}
+
+.section-navigation__item-link--active {
+  color: var(--special-yellow);
+  background-color: var(--basic-black);
+}
+*/
 
 
 /* Порядок свойств
