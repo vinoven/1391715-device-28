@@ -34,7 +34,8 @@
     </ul>
     <nav class="site-navigation">
       <ul class="site-navigation__list">
-        <li class="site-navigation__item"><a href="catalog.html" class="site-navigation__link pseudo-opacity extra-bold">Каталог
+        <li class="site-navigation__item"><a href="catalog.html"
+            class="site-navigation__link pseudo-opacity extra-bold">Каталог
             товаров</a>
           <ul class="sub-menu">
             <li class="sub-menu__section">
@@ -43,14 +44,17 @@
                     реальность</a></li>
                 <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Моноподы для
                     селфи</a></li>
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Экшн-камеры</a></li>
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Экшн-камеры</a>
+                </li>
               </ul>
             </li>
             <li class="sub-menu__section">
               <ul class="sub-menu__list">
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Фитнес-браслеты</a>
+                <li class="sub-menu__item"><a href="catalog.html"
+                    class="sub-menu__link pseudo-opacity">Фитнес-браслеты</a>
                 </li>
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Умные часы</a></li>
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Умные часы</a>
+                </li>
               </ul>
             </li>
             <li class="sub-menu__section">
@@ -61,11 +65,14 @@
             </li>
           </ul>
         </li>
-        <li class="site-navigation__item"><a href="blank.html" class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
+        <li class="site-navigation__item"><a href="blank.html"
+            class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
         </li>
-        <li class="site-navigation__item"><a href="blank.html" class="site-navigation__link pseudo-opacity extra-bold">Гарантия</a>
+        <li class="site-navigation__item"><a href="blank.html"
+            class="site-navigation__link pseudo-opacity extra-bold">Гарантия</a>
         </li>
-        <li class="site-navigation__item"><a href="blank.html" class="site-navigation__link pseudo-opacity extra-bold">Контакты</a>
+        <li class="site-navigation__item"><a href="blank.html"
+            class="site-navigation__link pseudo-opacity extra-bold">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -86,13 +93,13 @@
       </div>
       <form action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset>
-          <legend>Стоимость</legend>
-          <span>от 0</span>
+          <legend class="filter__category extra-bold">Стоимость</legend>
+          <span class="filter__range-value">от 0</span>
           <label><input type="range" name="cost" step="100" min="0" max="7500" value="5000"></label>
-          <span>до 5000</span>
+          <span class="filter__range-value">до 5000</span>
         </fieldset>
         <fieldset>
-          <legend>Цвет</legend>
+          <legend class="filter__category extra-bold">Цвет</legend>
           <ul>
             <li>
               <label class="form-label form-label-disabled"><input type="checkbox" name="black" checked disabled>
@@ -113,7 +120,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Bluetooth</legend>
+          <legend class="filter__category extra-bold">Bluetooth</legend>
           <ul>
             <li>
               <label class="form-label form-label-disabled"><input type="radio" name="bluetooth" value="true" checked
@@ -134,11 +141,15 @@
     <aside class="sort">
       <h2 class="sort__title extra-bold">Сортировка:</h2>
       <ul class="sort__list">
-        <li class="sort__item"><a href="catalog.html" class="sort__link">По цене</a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link sort__link--active">По цене</a></li>
         <li class="sort__item"><a href="catalog.html" class="sort__link">По типу</a></li>
         <li class="sort__item"><a href="catalog.html" class="sort__link">По популярности</a></li>
-        <li class="sort__item"><a href="catalog.html" class="sort__link">По возрастанию</a></li>
-        <li class="sort__item"><a href="catalog.html" class="sort__link">По убыванию</a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link sort__link--asc"><span
+              class="visually-hidden">По
+              возрастанию</span></a></li>
+        <li class="sort__item"><a href="catalog.html" class="sort__link sort__link--desc"><span
+              class="visually-hidden">По
+              убыванию</span></a></li>
       </ul>
     </aside>
 
@@ -203,9 +214,12 @@
         <a class="pagination__btn-prev extra-bold" aria-label="На предыдущую страницу">Назад</a>
       </div>
       <ul class="pagination__list">
-        <li class="pagination__item"><a href="blank.html" class="pagination__link pagination__link--active extra-bold" aria-label="На страницу">1</a></li>
-        <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold" aria-label="На страницу">2</a></li>
-        <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold" aria-label="На страницу">3</a></li>
+        <li class="pagination__item"><a href="blank.html" class="pagination__link pagination__link--active extra-bold"
+            aria-label="На страницу">1</a></li>
+        <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold"
+            aria-label="На страницу">2</a></li>
+        <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold"
+            aria-label="На страницу">3</a></li>
       </ul>
       <div class="pagination__btn-container">
         <a class="pagination__btn-next extra-bold" aria-label="На следующую страницу">Вперед</a>
@@ -217,24 +231,21 @@
         src="img/content/logo-device.svg" width="164" height="35" alt="На главную страницу">
     </a>
     <ul class="user-menu">
-      <li class="user-menu__item"><a href="blank.html"
-          class="user-menu__link white-text pseudo-opacity--unordered"
+      <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
           aria-label="В личный кабинет пользователя">Валентин Петухов</a></li>
-      <li class="user-menu__item"><a href="blank.html"
-          class="user-menu__link white-text pseudo-opacity--unordered"
+      <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
           aria-label="На страницу авторизации">Выйти</a></li>
-      <li class="user-menu__item"><a href="blank.html"
-          class="user-menu__link white-text pseudo-opacity--unordered"
+      <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
           aria-label="На страницу сравнения товаров">Сравнить</a></li>
-      <li class="user-menu__item"><a href="blank.html"
-          class="user-menu__link white-text pseudo-opacity--unordered"
+      <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
           aria-label="В корзину товаров">Корзина</a>
       </li>
     </ul>
     <div class="site-navigation">
       <ul class="site-navigation__list">
         <li class="site-navigation__item"><a href="blank.html"
-            class="site-navigation__link pseudo-opacity site-navigation__link pseudo-opacity extra-bold white-text">Доставка</a></li>
+            class="site-navigation__link pseudo-opacity site-navigation__link pseudo-opacity extra-bold white-text">Доставка</a>
+        </li>
         <li class="site-navigation__item"><a href="blank.html"
             class="site-navigation__link pseudo-opacity white-text extra-bold">Гарантия</a></li>
         <li class="site-navigation__item"><a href="blank.html"
