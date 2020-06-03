@@ -101,6 +101,17 @@ img {
   margin: -1px;
 }
 
+/* Сетки */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content ;
+}
+
 /* Специфичные стили */
 
 .page-header {
