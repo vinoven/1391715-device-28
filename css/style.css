@@ -121,7 +121,7 @@ img {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -275,6 +275,12 @@ img {
 
 .user-menu__item:last-child {
   margin-right: 0;
+}
+
+.promo-slider {
+  margin: 0;
+  margin-bottom: 76px;
+  padding: 0;
 }
 
 .pseudo-opacity:hover {
@@ -485,8 +491,55 @@ img {
   opacity: 0.3;
 }
 
+.categories__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories__item {
+  width: 160px;
+
+}
+
+.categories__item-icon {
+  width: 160px;
+  height: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--special-yellow-light);
+}
+
+.categories__item:nth-child(1) .categories__item-icon {
+  background-image: url('../img/decor/popular-1.svg');
+}
+
+.categories__item:nth-child(2) .categories__item-icon {
+  background-image: url('../img/decor/popular-2.svg');
+}
+
+.categories__item:nth-child(3) .categories__item-icon {
+  background-image: url('../img/decor/popular-3.svg');
+}
+
+.categories__item:nth-child(4) .categories__item-icon {
+  background-image: url('../img/decor/popular-4.svg');
+}
+
+.categories__item:nth-child(5) .categories__item-icon {
+  background-image: url('../img/decor/popular-5.svg');
+}
+
+.categories__item:nth-child(6) .categories__item-icon {
+  background-image: url('../img/decor/popular-6.svg');
+}
+
 .services {
   background-color: var(--basic-grey-lighter);
+  margin-bottom: 90px;
 }
 
 .services-definition__term {
