@@ -124,6 +124,20 @@ img {
   padding: 0 20px;
 }
 
+.brands {
+  margin-bottom: 90px;
+}
+
+.brands__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Специфичные стили */
 
 .page-header {
