@@ -307,6 +307,10 @@ img {
   background-color: var(--basic-dark);
 }
 
+.footer__address {
+  opacity: 0.7;
+}
+
 .catalog__item-header {
   font-weight: 800;
   font-size: 18px;
