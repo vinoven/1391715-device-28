@@ -79,6 +79,12 @@ img {
   height: auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Стили для служебных классов */
 
 .white-text {
@@ -109,7 +115,13 @@ img {
 
 .page-body {
   display: grid;
-  grid-template-rows: min-content 1fr min-content ;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Специфичные стили */
