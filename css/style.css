@@ -138,6 +138,49 @@ img {
   justify-content: space-around;
 }
 
+.information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.decor-block {
+  width: 80px;
+  height: 7px;
+  background-color: var(--basic-black);
+}
+
+.about,
+.contacts {
+  margin: 0;
+  padding: 0;
+  height: 580px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2,
+.contacts h2 {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about {
+  margin-right: 125px;
+}
+
+.partners__item {
+  margin-bottom: 20px;
+}
+
+.about .link__container,
+.contacts .link__container {
+  margin-top: auto;
+}
+
 /* Специфичные стили */
 
 .page-header {
@@ -243,10 +286,14 @@ img {
 
 .text-paragraph {
   line-height: 28px;
+
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .partners__list {
   list-style-type: circle;
+  margin: 20px 0;
 }
 
 .partners__item {
