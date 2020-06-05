@@ -187,11 +187,6 @@ img {
   margin-top: auto;
 }
 
-.page-footer__container {
-  display: flex;
-  flex-direction: column;
-}
-
 .page-footer__container .user-menu {
   display: flex;
   justify-content: flex-end;
