@@ -92,6 +92,7 @@ img {
   padding: 0;
   list-style: none;
 }
+
 /* Стили для служебных классов */
 
 .white-text {
@@ -132,7 +133,8 @@ img {
 }
 
 .brands {
-  margin-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .brands__list {
@@ -142,17 +144,16 @@ img {
 }
 
 .information {
+  padding-bottom: 90px;
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  margin-bottom: 90px;
 }
 
 .about,
 .contacts {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  width: 50%;
 }
 
 .about h2,
@@ -163,11 +164,11 @@ img {
 }
 
 .about {
-  margin-right: 125px;
+padding-right: 107px;
 }
 
-.partners__item {
-  margin-bottom: 20px;
+.contacts {
+  padding-left: 20px;
 }
 
 .about .link__container,
@@ -178,11 +179,11 @@ img {
 .page-footer__container .user-menu {
   display: flex;
   justify-content: flex-end;
-  margin-top: 46px;
 }
 
 .page-footer__address-menu-phone-container {
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 33px;
   display: flex;
   justify-content: space-between;
 }
@@ -194,7 +195,8 @@ img {
 }
 
 .page-footer__socials-intensive-container {
-  margin-top: 80px;
+  padding-top: 33px;
+  padding-bottom: 33px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -322,7 +324,7 @@ img {
   line-height: 28px;
 
   margin: 0;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .partners__list {
@@ -331,6 +333,7 @@ img {
 }
 
 .partners__item {
+  padding-bottom: 20px;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -399,6 +402,8 @@ img {
 }
 
 .page-footer {
+  padding-top: 46px;
+  padding-bottom: 31px;
   background-color: var(--basic-dark);
 }
 
@@ -516,7 +521,6 @@ img {
 
 .services {
   background-color: var(--basic-grey-lighter);
-  margin-bottom: 90px;
 }
 
 .services-definition__term {
