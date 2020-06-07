@@ -87,6 +87,11 @@ img {
   box-sizing: border-box;
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /* Стили для служебных классов */
 
 .white-text {
@@ -131,11 +136,6 @@ img {
 }
 
 .brands__list {
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
-
   display: flex;
   justify-content: space-around;
 }
@@ -200,12 +200,9 @@ img {
 }
 
 .page-footer__address-menu-phone-container .site-navigation__list {
-  list-style: none;
   width: 425px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 .page-footer__socials-intensive-container {
@@ -260,12 +257,6 @@ img {
 .sort__link {
   font-family: 'Open Sans', 'Verdana', sans-serif;
   font-weight: 300;
-}
-
-.user-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .user-menu__item {
@@ -427,12 +418,6 @@ img {
   opacity: 0.7;
 }
 
-.socials__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .catalog__item-header {
   font-weight: 800;
   font-size: 18px;
@@ -494,10 +479,7 @@ img {
 .categories__list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   margin-bottom: 50px;
-  padding: 0;
-  list-style: none;
 }
 
 .categories__item {
