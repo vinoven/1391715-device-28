@@ -139,8 +139,12 @@ img {
 
 .brands__list {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.brands__item {
+  width: 25%;
+  text-align: center;
 }
 
 .information {
