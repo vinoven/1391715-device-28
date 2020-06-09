@@ -15,26 +15,27 @@
       <a href="./index.html" class="logo__link" aria-label="Ссылка на главную страницу"><img class="logo__picture"
           src="img/content/logo-device.svg" width="164" height="35" alt="На главную страницу">
       </a>
-      <form action="https://echo.htmlacademy.ru" method="GET" class="search">
-        <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по сайту</span></label>
-        <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
-        <button type="submit" class="visually-hidden">Найти</button>
-      </form>
+      <div class="search-menu-container">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="search">
+          <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по сайту</span></label>
+          <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+          <button type="submit" class="visually-hidden">Найти</button>
+        </form>
 
-      <ul class="user-menu list">
-        <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
-            aria-label="На страницу авторизации">Войти</a></li>
-        <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
-            aria-label="На страницу сравнения товаров">Сравнить</a></li>
-        <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
-            aria-label="В корзину товаров">Корзина</a>
-        </li>
-      </ul>
+        <ul class="user-menu list">
+          <li class="user-menu__item user-menu__item--no-username"><a href="blank.html"
+              class="user-menu__link pseudo-opacity" aria-label="В личный кабинет пользователя"></a></li>
+          <li class="user-menu__item user-menu__item--login"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="На страницу авторизации">Войти</a></li>
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="На страницу сравнения товаров">Сравнить</a></li>
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="В корзину товаров">Корзина</a></li>
+        </ul>
+      </div>
       <nav class="site-navigation">
+        <a href="catalog.html" class="site-navigation__catalog-link pseudo-opacity extra-bold">Каталог товаров</a>
         <ul class="site-navigation__list list">
-          <li class="site-navigation__item"><a href="catalog.html"
-              class="site-navigation__link pseudo-opacity extra-bold">Каталог
-              товаров</a></li>
           <li class="site-navigation__item"><a href="blank.html"
               class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
           </li>

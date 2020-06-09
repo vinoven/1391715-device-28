@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,74 +9,81 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="page-header">
-    <a href="./index.html" class="logo__link" aria-label="Ссылка на главную страницу"><img class="logo__picture"
-        src="img/content/logo-device.svg" width="164" height="35" alt="На главную страницу">
-    </a>
-    <form action="https://echo.htmlacademy.ru" method="GET" class="search">
-      <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по сайту</span></label>
-      <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
-      <button type="submit" class="visually-hidden">Найти</button>
-    </form>
+<body class="page-body">
+  <div class="container">
+    <header class="page-header">
+      <a href="./index.html" class="logo__link" aria-label="Ссылка на главную страницу"><img class="logo__picture"
+          src="img/content/logo-device.svg" width="164" height="35" alt="На главную страницу">
+      </a>
+      <div class="search-menu-container">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="search">
+          <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по сайту</span></label>
+          <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
+          <button type="submit" class="visually-hidden">Найти</button>
+        </form>
 
-    <ul class="user-menu list">
-      <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
-          aria-label="В личный кабинет пользователя">Валентин Петухов</a></li>
-      <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity--reversed"
-          aria-label="На страницу авторизации">Выйти</a></li>
-      <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
-          aria-label="На страницу сравнения товаров">Сравнить</a></li>
-      <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
-          aria-label="В корзину товаров">Корзина</a>
-      </li>
+        <ul class="user-menu list">
+          <li class="user-menu__item user-menu__item--username"><a href="blank.html"
+              class="user-menu__link pseudo-opacity" aria-label="В личный кабинет пользователя">Валентин Петухов</a>
+          </li>
+          <li class="user-menu__item user-menu__item--logout"><a href="blank.html"
+              class="user-menu__link pseudo-opacity--reversed" aria-label="На страницу авторизации">Выйти</a></li>
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="На страницу сравнения товаров">Сравнить</a></li>
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="В корзину товаров">Корзина</a>
+          </li>
+        </ul>
+      </div>
 
-    </ul>
-    <nav class="site-navigation">
-      <ul class="site-navigation__list list">
-        <li class="site-navigation__item"><a href="catalog.html"
-            class="site-navigation__link pseudo-opacity extra-bold">Каталог
-            товаров</a>
-          <ul class="sub-menu  list">
-            <li class="sub-menu__section">
-              <ul class="sub-menu__list  list">
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Виртуальная
-                    реальность</a></li>
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Моноподы для
-                    селфи</a></li>
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Экшн-камеры</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sub-menu__section">
-              <ul class="sub-menu__list list">
-                <li class="sub-menu__item"><a href="catalog.html"
-                    class="sub-menu__link pseudo-opacity">Фитнес-браслеты</a>
-                </li>
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Умные часы</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sub-menu__section">
-              <ul class="sub-menu__list list">
-                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Квадрокоптер</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="site-navigation__item"><a href="blank.html"
-            class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
-        </li>
-        <li class="site-navigation__item"><a href="blank.html"
-            class="site-navigation__link pseudo-opacity extra-bold">Гарантия</a>
-        </li>
-        <li class="site-navigation__item"><a href="blank.html"
-            class="site-navigation__link pseudo-opacity extra-bold">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="site-navigation">
+        <ul class="site-navigation__list list">
+          <li class="site-navigation__item"><a href="catalog.html"
+              class="site-navigation__link pseudo-opacity extra-bold">Каталог
+              товаров</a>
+            <ul class="sub-menu  list">
+              <li class="sub-menu__section">
+                <ul class="sub-menu__list  list">
+                  <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Виртуальная
+                      реальность</a></li>
+                  <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Моноподы для
+                      селфи</a></li>
+                  <li class="sub-menu__item"><a href="catalog.html"
+                      class="sub-menu__link pseudo-opacity">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-menu__section">
+                <ul class="sub-menu__list list">
+                  <li class="sub-menu__item"><a href="catalog.html"
+                      class="sub-menu__link pseudo-opacity">Фитнес-браслеты</a>
+                  </li>
+                  <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-menu__section">
+                <ul class="sub-menu__list list">
+                  <li class="sub-menu__item"><a href="catalog.html"
+                      class="sub-menu__link pseudo-opacity">Квадрокоптер</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="site-navigation__item"><a href="blank.html"
+              class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
+          </li>
+          <li class="site-navigation__item"><a href="blank.html"
+              class="site-navigation__link pseudo-opacity extra-bold">Гарантия</a>
+          </li>
+          <li class="site-navigation__item"><a href="blank.html"
+              class="site-navigation__link pseudo-opacity extra-bold">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <main>
     <h2 class="title">Моноподы для селфи</h2>
     <section class="breadcrumbs">
