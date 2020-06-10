@@ -136,6 +136,10 @@ img {
   padding: 0 40px;
 }
 
+.inner-container {
+  padding-left: 60px;
+}
+
 .brands {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -187,7 +191,6 @@ img {
 /* Специфичные стили */
 
 .page-header {
-  background-color: var(--special-yellow-light);
   padding-left: 60px;
   padding-right: 60px;
   background: linear-gradient(to bottom, var(--basic-white) 40px, var(--special-yellow-light) 40px);
@@ -339,6 +342,24 @@ img {
 
 .title--wide {
   letter-spacing: 0.2em;
+}
+
+.catalog .title {
+  margin: 0;
+  padding-top: 44px;
+  padding-bottom: 30px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: url('../img/decor/nav-arrow.svg');
+
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .breadcrumbs__link {
