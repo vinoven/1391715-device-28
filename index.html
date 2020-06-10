@@ -33,6 +33,7 @@
               aria-label="В корзину товаров">Корзина</a></li>
         </ul>
       </div>
+      
       <nav class="site-navigation">
         <a href="catalog.html" class="site-navigation__catalog-link pseudo-opacity extra-bold">Каталог товаров</a>
         <ul class="site-navigation__list list">
@@ -48,7 +49,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+  </div>
+  <main>
+    <div class="container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
       <section class="promo-slider">
         <h2 class="visually-hidden">Топ девайсов</h2>
@@ -64,7 +67,7 @@
                 как Бен Стиллер!</strong>
               <p class="promo-slider__text">Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a href="blank.html" class="promo-slider__link extra-bold color__link"
+              <a href="blank.html" class="promo-slider__link extra-bold color-link color-link--size-l"
                 aria-label="К детальному описанию товара">Подробнее</a>
               <dl class="promo-slider__description">
                 <div class="promo-slider__description-item">
@@ -82,7 +85,7 @@
               </dl>
             </div>
           </li>
-          <li class="promo-slider__item" hidden>
+          <li class="promo-slider__item promo-slider__item--inactive">
             <div class="promo-slider__picture-wrapper">
               <img src="img/content/slider-2-1.png" width="345" height="485" alt="Фитнес-браслет"
                 class="promo-slider__picture">
@@ -93,7 +96,7 @@
                 правильно!</strong>
               <p class="promo-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
-              <a href="blank.html" class="promo-slider__link extra-bold color__link"
+              <a href="blank.html" class="promo-slider__link extra-bold color-link color-link--size-l"
                 aria-label="К детальному описанию товара">Подробнее</a>
               <dl class="promo-slider__description">
                 <div class="promo-slider__description-item">
@@ -103,7 +106,7 @@
               </dl>
             </div>
           </li>
-          <li class="promo-slider__item" hidden>
+          <li class="promo-slider__item promo-slider__item--inactive">
             <div class="promo-slider__picture-wrapper">
               <img src="img/content/slider-3-1.png" width="526" height="334" alt="Квадрокоптер с лазером"
                 class="promo-slider__picture">
@@ -113,7 +116,7 @@
               <strong class="promo-slider__title title">Порхает как бабочка, жалит как пчела!</strong>
               <p class="promo-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
-              <a href="blank.html" class="promo-slider__link extra-bold color__link"
+              <a href="blank.html" class="promo-slider__link extra-bold color-link color-link--size-l"
                 aria-label="К детальному описанию товара">Подробнее</a>
               <dl class="promo-slider__description">
                 <div class="promo-slider__description-item">
@@ -162,102 +165,110 @@
           </li>
         </ul>
       </section>
-  </div>
-
-  <section class="services">
-    <div class="container">
-      <h2 class="visually-hidden">Предоставляемые услуги</h2>
-      <ul class="section-navigation list">
-        <li class="section-navigation__item">
-          <a href="index.html"
-            class="section-navigation__item-link section-navigation__item-link--active extra-bold">Доставка</a>
-        </li>
-        <li class="section-navigation__item">
-          <div class="section__link-container">
-            <a href="index.html" class="section-navigation__item-link extra-bold">Гарантия</a>
-          </div>
-        </li>
-        <li class="section-navigation__item">
-          <div class="section__link-container">
-            <a href="index.html" class="section-navigation__item-link extra-bold">Кредит</a>
-          </div>
-        </li>
-      </ul>
-
-      <dl class="services-definition">
-        <dt class="services-definition__term title title--wide extra-bold">Доставка</dt>
-        <dd class="services-definition__description">Мы с удовольствием доставим ваш товар прямо к вашему
-          подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.</dd>
-        <dt class="services-definition__term title title--wide extra-bold">Гарантия</dt>
-        <dd class="services-definition__description">Если из-за возгорания купленного у нас товара у вас сгорит дом —
-          не переживайте, мы выдадим вам новый.<br>
-          Товар, не дом, конечно же.</dd>
-        <dt class="services-definition__term title title--wide extra-bold">Кредит</dt>
-        <dd class="services-definition__description">Залезть в долговую яму стало проще! Кредитные консультанты
-          подберут для вас наиболее выгодные <br>
-          условия кредита. Выгодные для нашего банка, разумеется.</dd>
-      </dl>
-  </section>
-  <div class="container">
-
-    <section class="brands">
-      <h2 class="visually-hidden">Список брендов</h2>
-      <ul class="brands__list list">
-        <li class="brands__item">
-          <a href="blank.html" class="brands__item-link" aria-label="На сайт компании DJI">
-            <img src="img/content/logo-1-1.png" width="260" height="100" alt="Логотип DJI" class="brands__item-logo">
-          </a>
-        </li>
-        <li class="brands__item">
-          <a href="blank.html" class="brands__item-link" aria-label="На сайт компании SPGADGETS">
-            <img src="img/content/logo-2-1.png" width="260" height="100" alt="Логотип SPGADGETS"
-              class="brands__item-logo">
-          </a>
-        </li>
-        <li class="brands__item">
-          <a href="blank.html" class="brands__item-link" aria-label="На сайт компании GoPro">
-            <img src="img/content/logo-3-1.png" width="260" height="100" alt="Логотип GoPro" class="brands__item-logo">
-          </a>
-        </li>
-        <li class="brands__item">
-          <a href="blank.html" class="brands__item-link" aria-label="На сайт компании Vive">
-            <img src="img/content/logo-4-1.png" width="260" height="100" alt="Логотип Vive" class="brands__item-logo">
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <div class="information">
-      <section class="about">
-        <h2 class="title title--wide">О нас</h2>
-        <p class="text-paragraph">Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.</p>
-        <p class="text-paragraph">Мы можем доставить ваш товар в самые отдаленные точки
-          России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="partners__list">
-          <li class="partners__item">Деловые линии</li>
-          <li class="partners__item">Автотрейдинг</li>
-          <li class="partners__item">ЖелДорЭкспедиция</li>
-        </ul>
-
-        <a href="blank.html" class="about__link extra-bold color__link"
-          aria-label="На страницу с информацией об интернет-магазине Device">Подробнее о нас</a>
-      </section>
-
-      <section class="contacts">
-        <h2 class="title title--wide">Контакты</h2>
-        <p class="text-paragraph">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="https://yandex.ru/maps/" class="contacts__map-link" target="_blank"
-          aria-label="Переход на сайт Яндекс Карты"><img src="img/content/map-1.png" width="560" height="222"
-            alt="Офис компании - г. Москва, ул. Строителей, 15" class="contacts__map-picture"></a>
-        <a href="blank.html" class="feedback__link extra-bold color__link"
-          aria-label="На страницу обратной связи">Напишите
-          нам</a>
-      </section>
     </div>
-  </div>
+
+    <section class="services">
+      <div class="container">
+        <div class="services-container">
+          <h2 class="visually-hidden">Предоставляемые услуги</h2>
+          <ul class="section-navigation list">
+            <li class="section-navigation__item section-navigation__item--active">
+              <a href="index.html"
+                class="section-navigation__item-link section-navigation__item-link--active extra-bold color-link color-link--size-s">Доставка</a>
+            </li>
+            <li class="section-navigation__item">
+              <a href="index.html" class="section-navigation__item-link extra-bold color-link color-link--size-s">Гарантия</a>
+            </li>
+            <li class="section-navigation__item">
+              <a href="index.html" class="section-navigation__item-link extra-bold color-link color-link--size-s">Кредит</a>
+            </li>
+          </ul>
+
+          <dl class="services-definition">
+            <div class="service-definition__item service-definition__item--active">
+              <dt class="services-definition__term title title--wide extra-bold">Доставка</dt>
+              <dd class="services-definition__description">Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.</dd>
+            </div>
+            <div class="service-definition__item hidden">
+              <dt class="services-definition__term title title--wide extra-bold">Гарантия</dt>
+              <dd class="services-definition__description">Если из-за возгорания купленного у нас товара у вас сгорит
+                дом
+                —
+                не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.</dd>
+            </div>
+            <div class="service-definition__item hidden">
+              <dt class="services-definition__term title title--wide extra-bold">Кредит</dt>
+              <dd class="services-definition__description">Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные <br>
+                условия кредита. Выгодные для нашего банка, разумеется.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+
+      <section class="brands">
+        <h2 class="visually-hidden">Список брендов</h2>
+        <ul class="brands__list list">
+          <li class="brands__item">
+            <a href="blank.html" class="brands__item-link" aria-label="На сайт компании DJI">
+              <img src="img/content/logo-1-1.png" width="260" height="100" alt="Логотип DJI" class="brands__item-logo">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="blank.html" class="brands__item-link" aria-label="На сайт компании SPGADGETS">
+              <img src="img/content/logo-2-1.png" width="260" height="100" alt="Логотип SPGADGETS"
+                class="brands__item-logo">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="blank.html" class="brands__item-link" aria-label="На сайт компании GoPro">
+              <img src="img/content/logo-3-1.png" width="260" height="100" alt="Логотип GoPro"
+                class="brands__item-logo">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="blank.html" class="brands__item-link" aria-label="На сайт компании Vive">
+              <img src="img/content/logo-4-1.png" width="260" height="100" alt="Логотип Vive" class="brands__item-logo">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="information">
+        <section class="about">
+          <h2 class="title title--wide">О нас</h2>
+          <p class="text-paragraph">Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.</p>
+          <p class="text-paragraph">Мы можем доставить ваш товар в самые отдаленные точки
+            России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="partners__list">
+            <li class="partners__item">Деловые линии</li>
+            <li class="partners__item">Автотрейдинг</li>
+            <li class="partners__item">ЖелДорЭкспедиция</li>
+          </ul>
+
+          <a href="blank.html" class="about__link extra-bold color-link color-link--size-xl"
+            aria-label="На страницу с информацией об интернет-магазине Device">Подробнее о нас</a>
+        </section>
+
+        <section class="contacts">
+          <h2 class="title title--wide">Контакты</h2>
+          <p class="text-paragraph">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            проверить работоспособность покупки. Всякое бывает.</p>
+          <a href="https://yandex.ru/maps/" class="contacts__map-link" target="_blank"
+            aria-label="Переход на сайт Яндекс Карты"><img src="img/content/map-1.png" width="560" height="222"
+              alt="Офис компании - г. Москва, ул. Строителей, 15" class="contacts__map-picture"></a>
+          <a href="blank.html" class="feedback__link extra-bold color-link color-link--size-xl"
+            aria-label="На страницу обратной связи">Напишите
+            нам</a>
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer class="page-footer">
@@ -306,7 +317,7 @@
     </div>
   </footer>
 
-  <div class="popup-map" hidden>
+  <div class="popup-map hidden">
     <img src="img/content/map-big-1.png" width="994" height="593"
       alt="Офис компании - г. Москва, ул. Строителей, 15. Находится напротив Драматического театра"
       class="popup-map__image">
@@ -314,7 +325,7 @@
         картой</span></button>
   </div>
 
-  <div class="feedback" hidden>
+  <div class="feedback hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__form">
       <p>
