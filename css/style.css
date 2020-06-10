@@ -782,6 +782,22 @@ img {
 }
 
 
+.sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sub-menu__section:not(:last-child) {
+  margin-right: 40px;
+  padding-bottom: 20px;
+}
+
+.sub-menu__item {
+  margin-bottom: 20px;
+}
+
 /* LVHA-order: :link — :visited — :hover — :active */
 
 /* Порядок свойств
