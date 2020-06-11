@@ -45,6 +45,7 @@
   --basic-mid-grey: #D9D9D9;
   --basic-grey-light: #DCDCDC;
   --basic-grey-lighter: #E5E5E5;
+  --basic-grey-lightest: #EBEBEB;
   --basic-white: #FFFFFF;
 
   --special-yellow-dark: #F0C52E;
@@ -698,8 +699,7 @@ img {
 
 .filter__title,
 .sort__title,
-.pagination__btn-prev,
-.pagination__btn-next,
+.pagination__btn,
 .pagination__link {
   font-size: 16px;
   line-height: 20px;
@@ -711,8 +711,15 @@ img {
   background-color: var(--basic-mid-grey);
 }
 
-.pagination__btn-next:active,
-.pagination__btn-prev:active {
+.pagination__btn {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pagination__btn:active {
   opacity: 0.3;
 }
 
@@ -817,6 +824,112 @@ img {
 
 .sub-menu__item {
   margin-bottom: 20px;
+}
+
+.catalog-section {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 70px;
+}
+
+.filter {
+  padding-left: 60px;
+  padding-right: 60px;
+  grid-row: 1 / 4;
+}
+
+.filter__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* SORT*/
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--basic-grey-lighter);
+}
+
+.sort__title {
+  margin: 0;
+  margin-right: 75px;
+}
+
+.sort__list {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sort-type {
+  margin-left: auto;
+  padding: 4px;
+}
+
+.sort-type__link {
+  color: var(--decor-black-opacity);
+}
+
+.sort-type__link--active {
+  color: var(--basic-black);
+}
+
+.sort-type__link:not(:last-child) {
+  margin-right: 16px;
+}
+
+/* CATALOG */
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.catalog__item-info {
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+}
+
+.catalog__item-header {
+  margin: 0;
+  width: 275px;
+  margin-right: auto;
+  padding-right: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--basic-grey-lightest);
+}
+
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+
+
+
+.hidden {
+  display: none;
 }
 
 /* LVHA-order: :link — :visited — :hover — :active */
