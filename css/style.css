@@ -36,7 +36,7 @@
 }
 
 /* variables */
-/* basic colors */
+
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -635,7 +635,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 2 0px;
+  padding-bottom: 20px;
 }
 
 .categories__item {
@@ -681,7 +681,7 @@ img {
   background-image: url('../img/decor/popular-6.svg');
 }
 
-/* SERVICES */
+/* Услуги services */
 
 .services {
   background: linear-gradient(to bottom, var(--basic-white) 165px, var(--basic-grey-lighter) 165px);
@@ -759,7 +759,6 @@ img {
   padding-top: 80px;
   padding-bottom: 86px;
   border-right: 7px solid var(--basic-black);
-  /* padding-right: 116px; */
 }
 
 .section-navigation__item:not(:last-child) {
@@ -860,7 +859,7 @@ img {
   padding-bottom: 25px;
 }
 
-/* SORT*/
+/* Сортировка sort */
 
 .sort {
   display: flex;
@@ -904,7 +903,7 @@ img {
   margin-right: 16px;
 }
 
-/* CATALOG */
+/* Каталог catalog */
 
 .catalog {
   padding-top: 70px;
