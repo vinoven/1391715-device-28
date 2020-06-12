@@ -526,6 +526,10 @@ img {
   opacity: 0.2;
 }
 
+.catalog__item-to-compare--hidden {
+  display: none;
+}
+
 .catalog__item-price {
   font-weight: 300;
   font-size: 16px;
@@ -698,6 +702,10 @@ img {
   margin: 0;
   padding-top: 70px;
   padding-left: 116px;
+}
+
+.services-definition__item--hidden {
+  display: none;
 }
 
 .services-definition__term {
@@ -937,6 +945,11 @@ img {
   padding-right: 5px;
 }
 
+.catalog__item-to-cart--hidden {
+  display: none;
+}
+
+
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -953,11 +966,11 @@ img {
   margin-right: 30px;
 }
 
+.popup-map--hidden {
+  display: none;
+}
 
-
-
-
-.hidden {
+.feedback--hidden {
   display: none;
 }
 
