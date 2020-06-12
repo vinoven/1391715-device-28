@@ -95,13 +95,12 @@
         <form class="filter__options" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset>
             <legend class="filter__category extra-bold">Стоимость</legend>
-            <span class="filter__range-value">от 0</span>
             <label><input type="range" name="cost" step="100" min="0" max="7500" value="5000"></label>
-            <span class="filter__range-value">до 5000</span>
+            <span class="filter__range-value">от 0</span><span class="filter__range-value">до 5000</span>
           </fieldset>
           <fieldset>
             <legend class="filter__category extra-bold">Цвет</legend>
-            <ul>
+            <ul class="list">
               <li>
                 <label class="form-label form-label-disabled"><input type="checkbox" name="black" checked disabled>
                   Чёрный</label>
@@ -122,7 +121,7 @@
           </fieldset>
           <fieldset>
             <legend class="filter__category extra-bold">Bluetooth</legend>
-            <ul>
+            <ul class="list">
               <li>
                 <label class="form-label form-label-disabled"><input type="radio" name="bluetooth" value="true" checked
                     disabled> Есть</label>
@@ -132,7 +131,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filter__submit-btn extra-bold color-link" type="submit"
+          <button class="filter__submit-btn extra-bold color-link color-link--size-m" type="submit"
             aria-label="Применить фильтр и показать результаты">Показать</button>
         </form>
       </aside>
@@ -214,23 +213,24 @@
               сравнению</a>
           </li>
         </ul>
-      </section>
-      <section class="pagination">
-        <h2 class="visually-hidden">Навигация по страницам каталога</h2>
-        <div class="pagination__btn-container">
-          <a class="pagination__btn pagination__btn-prev extra-bold" aria-label="На предыдущую страницу">Назад</a>
-        </div>
-        <ul class="pagination__list list">
-          <li class="pagination__item"><a href="blank.html" class="pagination__link pagination__link--active extra-bold"
-              aria-label="На страницу">1</a></li>
-          <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold"
-              aria-label="На страницу">2</a></li>
-          <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold"
-              aria-label="На страницу">3</a></li>
-        </ul>
-        <div class="pagination__btn-container">
-          <a class="pagination__btn pagination__btn-next extra-bold" aria-label="На следующую страницу">Вперед</a>
-        </div>
+        <section class="pagination">
+          <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+          <div class="pagination__btn-container">
+            <a class="pagination__btn pagination__btn-prev extra-bold" aria-label="На предыдущую страницу">Назад</a>
+          </div>
+          <ul class="pagination__list list">
+            <li class="pagination__item"><a href="blank.html"
+                class="pagination__link pagination__link--active extra-bold" aria-label="На страницу">1</a></li>
+            <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold"
+                aria-label="На страницу">2</a></li>
+            <li class="pagination__item"><a href="blank.html" class="pagination__link extra-bold"
+                aria-label="На страницу">3</a></li>
+          </ul>
+          <div class="pagination__btn-container">
+            <a class="pagination__btn pagination__btn-next extra-bold" aria-label="На следующую страницу">Вперед</a>
+          </div>
+        </section>
+
       </section>
     </div>
 

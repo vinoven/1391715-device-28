@@ -396,8 +396,19 @@ img {
   line-height: 28px;
 }
 
-.filter {
-  background-color: var(--basic-grey-lighter);
+.filter__options {
+  margin-top: 70px;
+}
+
+.filter__options fieldset {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  border: 0;
+}
+
+.filter__options input {
+  margin-bottom: 20px;
 }
 
 .form-label {
@@ -406,15 +417,20 @@ img {
 }
 
 .filter__submit-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
   border: 0;
   background-color: transparent;
 }
 
-.filter__header {
-  background-color: var(--basic-grey-light);
-}
-
 .filter__category {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  border-top: 2px solid var(--basic-black);
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -474,7 +490,6 @@ img {
   background-color: var(--special-yellow-dark);
 }
 
-/* Исправить прозрачость, применяемую к фону при active*/
 .color-link:active {
   color: var(--decor-black-opacity);
 }
@@ -828,14 +843,15 @@ img {
 
 .catalog-section {
   display: grid;
-  grid-template-columns: 330px 1fr;
-  gap: 70px;
+  grid-template-columns: 320px 1fr;
 }
 
 .filter {
   padding-left: 60px;
   padding-right: 60px;
   grid-row: 1 / 4;
+
+  background: linear-gradient(to bottom, var(--basic-grey-light) 70px, var(--basic-grey-lighter) 1px);
 }
 
 .filter__title {
@@ -857,6 +873,7 @@ img {
 
 .sort__title {
   margin: 0;
+  margin-left: 70px;
   margin-right: 75px;
 }
 
@@ -872,7 +889,7 @@ img {
 
 .sort-type {
   margin-left: auto;
-  padding: 4px;
+  padding-right: 5px;
 }
 
 .sort-type__link {
@@ -889,10 +906,23 @@ img {
 
 /* CATALOG */
 
+.catalog {
+  padding-top: 70px;
+  padding-bottom: 78px;
+  padding-left: 70px;
+}
+
+.catalog-container .title {
+  margin: 0;
+  margin-top: 44px;
+  margin-bottom: 30px;
+}
+
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  padding-bottom: 40px;
 }
 
 .catalog__item-info {
