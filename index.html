@@ -12,7 +12,7 @@
 <body class="page-body">
   <div class="container">
     <header class="page-header">
-      <a href="./index.html" class="logo__link" aria-label="Ссылка на главную страницу"><img class="logo__picture"
+      <a href="./index.html" class="logo__link pseudo-opacity" aria-label="Ссылка на главную страницу"><img class="logo__picture"
           src="img/content/logo-device.svg" width="164" height="35" alt="На главную страницу">
       </a>
       <div class="search-menu-container">
@@ -24,12 +24,12 @@
 
         <ul class="user-menu list">
           <li class="user-menu__item user-menu__item--no-username"><a href="blank.html"
-              class="user-menu__link pseudo-opacity" aria-label="В личный кабинет пользователя"></a></li>
-          <li class="user-menu__item user-menu__item--login"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              class="user-menu__link user-menu__icon pseudo-opacity" aria-label="В личный кабинет пользователя"></a></li>
+          <li class="user-menu__item user-menu__item--login"><a href="blank.html" class="user-menu__link user-menu__icon user-menu__user-icon pseudo-opacity"
               aria-label="На страницу авторизации">Войти</a></li>
-          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link user-menu__icon user-menu__compare-icon pseudo-opacity"
               aria-label="На страницу сравнения товаров">Сравнить</a></li>
-          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link user-menu__icon user-menu__cart-icon pseudo-opacity"
               aria-label="В корзину товаров">Корзина</a></li>
         </ul>
       </div>
@@ -133,12 +133,9 @@
         </ol>
 
         <div class="promo-slider__slider">
-          <button class="promo-slider__slider-item" aria-label="Перейти к первому из популярных товаров">Слайд
-            1</button>
-          <button class="promo-slider__slider-item" aria-label="Перейти ко второму из популярных товаров">Слайд
-            2</button>
-          <button class="promo-slider__slider-item" aria-label="Перейти к третьему из популярных товаров">Слайд
-            3</button>
+          <button class="promo-slider__slider-item promo-slider__slider-item--active" aria-label="Перейти к первому из популярных товаров"></button>
+          <button class="promo-slider__slider-item" aria-label="Перейти ко второму из популярных товаров"></button>
+          <button class="promo-slider__slider-item" aria-label="Перейти к третьему из популярных товаров"></button>
         </div>
 
       </section>
@@ -187,13 +184,13 @@
           </ul>
 
           <dl class="services-definition">
-            <div class="services-definition__item service-definition__item--active">
+            <div class="services-definition__item services-definition__item-1 service-definition__item--active">
               <dt class="services-definition__term title title--wide extra-bold">Доставка</dt>
               <dd class="services-definition__description">Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</dd>
             </div>
-            <div class="services-definition__item services-definition__item--hidden">
+            <div class="services-definition__item services-definition__item-2">
               <dt class="services-definition__term title title--wide extra-bold">Гарантия</dt>
               <dd class="services-definition__description">Если из-за возгорания купленного у нас товара у вас сгорит
                 дом
@@ -201,7 +198,7 @@
                 не переживайте, мы выдадим вам новый.<br>
                 Товар, не дом, конечно же.</dd>
             </div>
-            <div class="services-definition__item services-definition__item--hidden">
+            <div class="services-definition__item services-definition__item-3">
               <dt class="services-definition__term title title--wide extra-bold">Кредит</dt>
               <dd class="services-definition__description">Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут для вас наиболее выгодные <br>
@@ -276,15 +273,15 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <ul class="user-menu list">
-        <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
+        <li class="user-menu__item"><a href="blank.html" class="user-menu__link user-menu__icon user-menu__user-icon white-text pseudo-opacity--unordered"
             aria-label="На страницу авторизации">Войти</a></li>
-        <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
+        <li class="user-menu__item"><a href="blank.html" class="user-menu__link user-menu__icon user-menu__compare-icon white-text pseudo-opacity--unordered"
             aria-label="На страницу сравнения товаров">Сравнить</a></li>
-        <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text pseudo-opacity--unordered"
+        <li class="user-menu__item"><a href="blank.html" class="user-menu__link user-menu__icon user-menu__cart-icon white-text pseudo-opacity--unordered"
             aria-label="В корзину товаров">Корзина</a>
         </li>
       </ul>
-      <a href="/index.html" class="logo__link" aria-label="Ссылка на главную страницу"><img class="logo__picture"
+      <a href="/index.html" class="logo__link pseudo-opacity" aria-label="Ссылка на главную страницу"><img class="logo__picture"
           src="img/content/logo-device.svg" width="164" height="35" alt="На главную страницу">
       </a>
       <div class="page-footer__address-menu-phone-container">
@@ -303,14 +300,14 @@
       </div>
       <div class="page-footer__socials-intensive-container">
         <ul class="socials__list list">
-          <li class="socials__item"><a href="https://www.facebook.com/" class="social__link"><span
+          <li class="socials__item"><a class="socials__link socials__link--facebook" href="https://www.facebook.com/"><span
                 class="visually-hidden">Наш профиль в Facebook</span></a></li>
-          <li class="socials__item"><a href="https://www.instagram.com/" class="social__link"><span
+          <li class="socials__item"><a class="socials__link socials__link--instagram" href="https://www.instagram.com/"><span
                 class="visually-hidden">Наш профиль в Instagram</span></a></li>
-          <li class="socials__item"><a href="https://www.twitter.com/" class="social__link"><span
+          <li class="socials__item"><a class="socials__link socials__link--twitter" href="https://www.twitter.com/"><span
                 class="visually-hidden">Наш профиль в Twitter</span></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy__link"
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy__link pseudo-opacity"
           aria-label="Перейти к интенсивам HTML Academy">
           <img src="img/content/logo-html.svg" width="27" height="34" alt="Интенсивы HTML Academy"
             class="academy__picture">
@@ -320,33 +317,37 @@
   </footer>
 
   <div class="popup-map popup-map--hidden">
-    <img src="img/content/map-big-1.png" width="994" height="593"
-      alt="Офис компании - г. Москва, ул. Строителей, 15. Находится напротив Драматического театра"
-      class="popup-map__image">
-    <button type="button" class="popup-map__close-button"><span class="visually-hidden">Закрыть всплывающее окно с
-        картой</span></button>
+    <div class="popup-map__container">
+      <img src="img/content/map-big-1.png" width="994" height="593"
+        alt="Офис компании - г. Москва, ул. Строителей, 15. Находится напротив Драматического театра"
+        class="popup-map__image">
+      <button type="button" class="popup-map__close-button close-form-btn btn-reset-style"><span class="visually-hidden">Закрыть всплывающее окно с
+          картой</span></button>
+    </div>
   </div>
 
   <div class="feedback feedback--hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__form">
-      <p>
-        <label for="feedback-name">Ваше имя:</label>
-        <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия" required>
-      </p>
-      <p>
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
-      </p>
-      <p>
-        <label for="feeback-text">Текст письма:</label>
-        <textarea name="feeback-text" id="feeback-text" cols="20" rows="5" placeholder="В свободной форме"
-          required></textarea>
-      </p>
-      <button type="submit" aria-label="Отправить форму обратной связи">Отправить</button>
-    </form>
-    <button type="button" class="feedback__close-form"><span class="visually-hidden">Закрыть форму обратной
-        связи</span></button>
+    <div class="feedback__form-container">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__form">
+        <p class="feedback__name-field">
+          <label for="feedback-name">Ваше имя:</label>
+          <input class="feedback-name feedback__form-field" type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="feedback__email-field">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input class="feedback-email feedback__form-field"type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+        </p>
+        <p class="feedback__text-field">
+          <label for="feeback-text">Текст письма:</label>
+          <textarea class="feedback-text feedback__form-field" name="feeback-text" id="feeback-text" cols="20" rows="5" placeholder="В свободной форме"
+            required></textarea>
+        </p>
+        <button class="feedback__form-submit close-form-btn btn-reset-style extra-bold color-link color-link--size-m" type="submit" aria-label="Отправить форму обратной связи">Отправить</button>
+      </form>
+      <button class="feedback__close-form btn-reset-style" type="button"><span class="visually-hidden">Закрыть форму обратной
+          связи</span></button>
+    </div>
   </div>
 
 </body>
