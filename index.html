@@ -10,6 +10,27 @@
 </head>
 
 <body class="page-body">
+
+  <svg class="user-menu-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1">
+    <symbol id="user" viewBox="0 0 9 10">
+      <path fill="currentColor"
+        d="M4.5.333c1.197 0 2.167 1.044 2.167 2.334C6.667 3.956 5.697 5 4.5 5 3.303 5 2.333 3.956 2.333 2.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917C2.28 5.583.167 7.1.167 8.5.167 9.667 4.5 9.667 4.5 9.667z">
+      </path>
+    </symbol>
+    <symbol id="compare" viewBox="0 0 10 10">
+      <path fill="currentColor" d="M8 2h1.984v8H8zM0 3h1.984v7H0zm4-3h2v10H4z"></path>
+    </symbol>
+    <symbol id="cart" viewBox="0 0 12 12">
+      <path fill="currentColor"
+        d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z">
+      </path>
+      <path fill="currentColor"
+        d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z">
+      </path>
+    </symbol>
+  </svg>
+
   <div class="container">
     <header class="page-header">
       <a class="logo__link pseudo-opacity" aria-label="Ссылка на главную страницу">
@@ -20,29 +41,44 @@
       </a>
       <div class="search-menu-container">
         <form action="https://echo.htmlacademy.ru" method="GET" class="search">
-          <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по сайту</span></label>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 16 16">
+            <path
+              d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z" />
+          </svg>
+          <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по
+              сайту</span></label>
           <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
           <button type="submit" class="visually-hidden">Найти</button>
         </form>
 
         <ul class="user-menu list">
-          <li class="user-menu__item user-menu__item--no-username"><a
-              class="user-menu__link user-menu__icon pseudo-opacity" aria-label="В личный кабинет пользователя"></a>
+          <li class="user-menu__item user-menu__item--no-username"><a class="user-menu__link pseudo-opacity"
+              aria-label="В личный кабинет пользователя"></a>
           </li>
-          <li class="user-menu__item user-menu__item--login"><a href="blank.html"
-              class="user-menu__link user-menu__icon user-menu__user-icon pseudo-opacity"
-              aria-label="На страницу авторизации">Войти</a></li>
-          <li class="user-menu__item"><a href="blank.html"
-              class="user-menu__link user-menu__icon user-menu__compare-icon pseudo-opacity"
-              aria-label="На страницу сравнения товаров">Сравнить</a></li>
-          <li class="user-menu__item"><a href="blank.html"
-              class="user-menu__link user-menu__icon user-menu__cart-icon pseudo-opacity"
-              aria-label="В корзину товаров">Корзина</a></li>
+          <li class="user-menu__item user-menu__item--login"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="На страницу авторизации">
+              <svg class="user-menu__icon" width="9" height="10">
+                <use xlink:href="#user"></use>
+              </svg>
+              Войти</a></li>
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="На страницу сравнения товаров">
+              <svg class="user-menu__icon" width="10" height="10">
+                <use xlink:href="#compare"></use>
+              </svg>
+              Сравнить</a></li>
+          <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
+              aria-label="В корзину товаров">
+              <svg class="user-menu__icon" width="12" height="12">
+                <use xlink:href="#cart"></use>
+              </svg>
+              Корзина</a></li>
         </ul>
       </div>
 
       <nav class="site-navigation">
-        <a href="catalog.html" class="site-navigation__catalog-link pseudo-opacity extra-bold">Каталог товаров</a>
+        <a href="catalog.html" class="site-navigation__catalog-link pseudo-opacity extra-bold">Каталог
+          товаров</a>
         <ul class="site-navigation__list list">
           <li class="site-navigation__item"><a href="blank.html"
               class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
@@ -194,13 +230,15 @@
           <dl class="services-definition">
             <div class="services-definition__item services-definition__item-1 service-definition__item--active">
               <dt class="services-definition__term title title--wide extra-bold">Доставка</dt>
-              <dd class="services-definition__description">Мы с удовольствием доставим ваш товар прямо к вашему
+              <dd class="services-definition__description">Мы с удовольствием доставим ваш товар прямо к
+                вашему
                 подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</dd>
             </div>
             <div class="services-definition__item services-definition__item-2">
               <dt class="services-definition__term title title--wide extra-bold">Гарантия</dt>
-              <dd class="services-definition__description">Если из-за возгорания купленного у нас товара у вас сгорит
+              <dd class="services-definition__description">Если из-за возгорания купленного у нас товара у
+                вас сгорит
                 дом
                 —
                 не переживайте, мы выдадим вам новый.<br>
@@ -208,7 +246,8 @@
             </div>
             <div class="services-definition__item services-definition__item-3">
               <dt class="services-definition__term title title--wide extra-bold">Кредит</dt>
-              <dd class="services-definition__description">Залезть в долговую яму стало проще! Кредитные консультанты
+              <dd class="services-definition__description">Залезть в долговую яму стало проще! Кредитные
+                консультанты
                 подберут для вас наиболее выгодные <br>
                 условия кредита. Выгодные для нашего банка, разумеется.</dd>
             </div>
@@ -281,15 +320,27 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <ul class="user-menu list">
-        <li class="user-menu__item"><a href="blank.html"
-            class="user-menu__link user-menu__icon user-menu__user-icon white-text pseudo-opacity--unordered"
-            aria-label="На страницу авторизации">Войти</a></li>
-        <li class="user-menu__item"><a href="blank.html"
-            class="user-menu__link user-menu__icon user-menu__compare-icon white-text pseudo-opacity--unordered"
-            aria-label="На страницу сравнения товаров">Сравнить</a></li>
-        <li class="user-menu__item"><a href="blank.html"
-            class="user-menu__link user-menu__icon user-menu__cart-icon white-text pseudo-opacity--unordered"
-            aria-label="В корзину товаров">Корзина</a>
+        <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text"
+            aria-label="На страницу авторизации">
+            <svg class="user-menu__icon" width="9" height="10">
+              <use xlink:href="#user"></use>
+            </svg>
+            <span class="pseudo-opacity--unordered">Войти</span></a>
+        </li>
+        <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text"
+            aria-label="На страницу сравнения товаров">
+            <svg class="user-menu__icon" width="10" height="10">
+              <use xlink:href="#compare"></use>
+            </svg>
+            <span class="pseudo-opacity--unordered">Сравнить</span></a>
+        </li>
+        <li class="user-menu__item"><a href="blank.html" class="user-menu__link white-text"
+            aria-label="В корзину товаров">
+            <svg class="user-menu__icon" width="12" height="12">
+              <use xlink:href="#cart"></use>
+            </svg>
+            <span class="pseudo-opacity--unordered">Корзина</span></a>
+        </li>
         </li>
       </ul>
       <a class="logo__link pseudo-opacity" aria-label="Ссылка на главную страницу">
@@ -315,11 +366,14 @@
       <div class="page-footer__socials-intensive-container">
         <ul class="socials__list list">
           <li class="socials__item"><a class="socials__link socials__link--facebook"
-              href="https://www.facebook.com/"><span class="visually-hidden">Наш профиль в Facebook</span></a></li>
+              href="https://www.facebook.com/"><span class="visually-hidden">Наш профиль в
+                Facebook</span></a></li>
           <li class="socials__item"><a class="socials__link socials__link--instagram"
-              href="https://www.instagram.com/"><span class="visually-hidden">Наш профиль в Instagram</span></a></li>
+              href="https://www.instagram.com/"><span class="visually-hidden">Наш профиль в
+                Instagram</span></a></li>
           <li class="socials__item"><a class="socials__link socials__link--twitter"
-              href="https://www.twitter.com/"><span class="visually-hidden">Наш профиль в Twitter</span></a></li>
+              href="https://www.twitter.com/"><span class="visually-hidden">Наш профиль в
+                Twitter</span></a></li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy__link pseudo-opacity"
           aria-label="Перейти к интенсивам HTML Academy">
