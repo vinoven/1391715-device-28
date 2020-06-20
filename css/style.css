@@ -216,9 +216,10 @@ img {
 /* Специфичные стили */
 
 .page-header {
+  padding-top: 20px;
   padding-left: 60px;
   padding-right: 60px;
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     var(--basic-white) 40px,
     var(--special-yellow-light) 40px
@@ -273,8 +274,8 @@ img {
 }
 
 .logo__link {
-  display: block;
-  padding-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page-footer .logo__link {
@@ -295,12 +296,11 @@ img {
 }
 
 .user-menu__item {
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .user-menu__icon {
   margin-right: 10px;
-  opacity: 1;
 }
 
 .user-menu__link:hover .user-menu__icon {
@@ -311,19 +311,16 @@ img {
   opacity: 0.3;
 }
 
-
-
 .page-footer .user-menu__icon {
   color: var(--special-yellow-dark);
 }
-
 
 .user-menu__link {
   position: relative;
 }
 
 .page-header .user-menu__item:last-child {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .user-menu__item--login {
@@ -388,7 +385,7 @@ img {
   margin-bottom: 76px;
   padding: 0;
 
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     var(--special-yellow-light) 130px,
     var(--basic-white) 40px
@@ -595,8 +592,19 @@ img {
   background-color: var(--basic-dark);
 }
 
+.footer__address,
+.footer__phone {
+  min-width: 200px;
+  max-width: 250px;
+  width: 100%;
+}
+
 .footer__address {
   opacity: 0.7;
+}
+
+.footer__phone {
+  text-align: right;
 }
 
 .catalog__item-header {
@@ -833,7 +841,7 @@ img {
 /* Услуги services */
 
 .services {
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     var(--basic-white) 165px,
     var(--basic-grey-lighter) 165px
@@ -1002,19 +1010,22 @@ img {
   justify-content: space-between;
 }
 
-.page-footer__address-menu-phone-container .site-navigation__item {
-  margin-right: auto;
-  max-width: 33%;
-}
-
 .page-footer__address-menu-phone-container .site-navigation__list {
-  width: 425px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.page-footer__address-menu-phone-container .site-navigation__item {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .page-footer__socials-intensive-container {
+  padding-left: 100px;
   padding-top: 33px;
   padding-bottom: 33px;
   display: flex;
@@ -1035,7 +1046,7 @@ img {
 
 .socials__list {
   display: flex;
-  align-content: center;
+  margin: 0 auto;
 }
 
 .socials__link {
@@ -1056,8 +1067,9 @@ img {
   opacity: 0.1;
 }
 
-.socials__item:not(:last-child) {
-  margin-right: 20px;
+.socials__item {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .socials__link--facebook {
@@ -1072,10 +1084,12 @@ img {
   background-image: url(../img/decor/twitter.svg);
 }
 
+.academy__picture {
+  vertical-align: middle;
+}
+
 .academy__link {
-  position: absolute;
-  bottom: 26px;
-  right: 0;
+  margin-left: 73px;
 }
 
 .sub-menu {
@@ -1104,7 +1118,7 @@ img {
   padding-right: 60px;
   grid-row: 1 / 4;
 
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     var(--basic-grey-light) 70px,
     var(--basic-grey-lighter) 1px
@@ -1334,7 +1348,6 @@ img {
 .feedback--hidden {
   display: none;
 }
-
 
 /* LVHA-order: :link — :visited — :hover — :active */
 
