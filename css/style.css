@@ -496,6 +496,7 @@ img {
 
 .breadcrumbs__list {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 50px;
 }
 
