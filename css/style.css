@@ -163,11 +163,6 @@ img {
   flex-wrap: wrap;
 }
 
-/* .brands__item {
-  width: 25%;
-  text-align: center;
-} */
-
 .brands__item {
   width: 260px;
   height: 100px;
@@ -178,7 +173,6 @@ img {
 
 .brands__item:nth-child(1) {
   background: url(../img/content/logo-1.jpg);
-
 }
 .brands__item:nth-child(2) {
   background: url(../img/content/logo-2.jpg);
@@ -1263,11 +1257,20 @@ img {
 }
 
 .sort-type__link {
-  color: var(--decor-black-opacity);
+  color: var(--basic-black);
+  opacity: 0.2;
 }
 
 .sort-type__link--active {
-  color: var(--basic-black);
+  opacity: 1;
+}
+
+.sort-type__link:hover {
+  opacity: 0.4;
+}
+
+.sort-type__link:active {
+  opacity: 1;
 }
 
 .sort-type__link:not(:last-child) {
