@@ -277,6 +277,26 @@ img {
   fill: var(--special-yellow-dark);
 }
 
+.search-menu-container {
+  padding-top: 30px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  background-image: url(../img/decor/search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+}
+
 .search-field {
   background-color: transparent;
   border: 0;
@@ -320,13 +340,6 @@ img {
 
 .page-footer .logo__link {
   padding-top: 0px;
-}
-
-.search-menu-container {
-  padding-top: 30px;
-  padding-bottom: 48px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .user-menu {
