@@ -41,6 +41,7 @@
   --basic-dark: #363636;
   --basic-grey: #464646;
   --basic-half-grey: #7e7e7e;
+  --basic-option-grey: #a6a6a6;
   --basic-mid-grey: #d9d9d9;
   --basic-medium-grey: #f2f2f2;
   --basic-grey-light: #dcdcdc;
@@ -693,7 +694,7 @@ img {
 }
 
 .price-controls input {
-  width: 75px; 
+  width: 75px;
   border: none;
   background-color: transparent;
 }
@@ -1379,6 +1380,55 @@ img {
   margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.color-options li {
+  margin-bottom: 20px;
+}
+
+/* checkbox */
+
+.check {
+  padding-left: 42px;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -42px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--basic-black);
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.check__input:hover + .check__box,
+.check__input:focus + .check__box {
+  opacity: 0.6;
+}
+
+.check__input:active + .check__box {
+  opacity: 1;
+}
+
+.check__input:disabled + .check__box {
+  opacity: 0.25;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.07692 3.75L0.384613 5.5L5.46154 10.75L13.9231 2L12.2308 0.25L5.46154 7.25L2.07692 3.75Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.check__input:disabled ~ .check__option-name {
+  color: var(--basic-option-grey);
 }
 
 /* Сортировка sort */
