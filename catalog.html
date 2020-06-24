@@ -184,13 +184,18 @@
           </fieldset>
           <fieldset>
             <legend class="filter__category extra-bold">Bluetooth</legend>
-            <ul class="list">
+            <ul class="bluetooth-options list">
               <li>
-                <label class="form-label form-label-disabled"><input type="radio" name="bluetooth" value="true" checked
-                    disabled> Есть</label>
+                <label class="form-label radio">
+                  <input class="radio__input" type="radio" name="bluetooth" value="true" checked disabled>
+                  <span class="radio__button"></span><span class="radio__option-name">Есть</span>
+                </label>
               </li>
               <li>
-                <label class="form-label"><input type="radio" name="bluetooth" value="false"> Нет</label>
+                <label class="form-label radio">
+                  <input class="radio__input" type="radio" name="bluetooth" value="false">
+                  <span class="radio__button"></span><span class="radio__option-name">Нет</span>
+                </label>
               </li>
             </ul>
           </fieldset>

@@ -1382,24 +1382,28 @@ img {
   padding-bottom: 25px;
 }
 
-.color-options li {
+.color-options li,
+.bluetooth-options li {
   margin-bottom: 20px;
 }
 
-/* checkbox */
+/* fiter => checkbox + radio */
 
-.check {
+.check,
+.radio {
   padding-left: 42px;
 }
 
-.check__input {
+.check__input,
+.radio__input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.check__box {
+.check__box,
+.radio__button {
   position: absolute;
   margin-left: -42px;
   width: 24px;
@@ -1410,16 +1414,24 @@ img {
   background-repeat: no-repeat;
 }
 
+.radio__button {
+  border-radius: 50%;
+}
+
 .check__input:hover + .check__box,
-.check__input:focus + .check__box {
+.check__input:focus + .check__box,
+.radio__input:hover + .radio__button,
+.radio__input:focus + .radio__button {
   opacity: 0.6;
 }
 
-.check__input:active + .check__box {
+.check__input:active + .check__box,
+.radio__input:active + .radio__button {
   opacity: 1;
 }
 
-.check__input:disabled + .check__box {
+.check__input:disabled + .check__box,
+.radio__input:disabled + .radio__button {
   opacity: 0.25;
 }
 
@@ -1427,7 +1439,12 @@ img {
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.07692 3.75L0.384613 5.5L5.46154 10.75L13.9231 2L12.2308 0.25L5.46154 7.25L2.07692 3.75Z' fill='black'/%3E%3C/svg%3E%0A");
 }
 
-.check__input:disabled ~ .check__option-name {
+.radio__input:checked + .radio__button {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='black'/%3E%3C/svg%3E");
+}
+
+.check__input:disabled ~ .check__option-name,
+.radio__input:disabled ~ .radio__option-name {
   color: var(--basic-option-grey);
 }
 
