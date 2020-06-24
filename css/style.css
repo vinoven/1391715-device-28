@@ -54,8 +54,8 @@
   --special-green: #91c92f;
 
   --decor-yellow: #ffc600;
-  --decor-black-opacity: rgba(0 0 0 / 0.3);
   --decor-black-shadow-opacity: rgba(0 0 0 / 0.3);
+  --decor-black-shadow-light-opacity: rgba(0 0 0 / 0.18);
 
   --status-warning: #f6dada;
 
@@ -432,7 +432,7 @@ img {
 }
 
 .user-menu__item--username {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .user-menu__item--no-username {
@@ -447,7 +447,7 @@ img {
   margin-right: -60px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .page-header .site-navigation__list {
@@ -619,7 +619,7 @@ img {
 .filter__options fieldset {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 17px;
   border: 0;
 }
 
@@ -641,7 +641,7 @@ img {
   display: block;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
 
   border-top: 2px solid var(--basic-black);
   font-size: 14px;
@@ -650,9 +650,52 @@ img {
   text-transform: none;
 }
 
-.filter__range-value {
+.range-filter {
+  width: 200px;
   font-size: 14px;
   line-height: 16px;
+}
+
+.range-controls {
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-black);
+  opacity: 0.2;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+  background-color: var(--special-green);
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-grey-lighter);
+  border-radius: 50%;
+  box-sizing: content-box;
+  box-shadow: 0px 2px 2px var(--decor-black-shadow-light-opacity);
+  position: absolute;
+  top: -9px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 114px;
+}
+
+.price-controls input {
+  width: 75px; 
+  border: none;
+  background-color: transparent;
 }
 
 .sort__link {

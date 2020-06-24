@@ -44,7 +44,8 @@
           <label class="search-icon" for="search"><span class="visually-hidden">Поле поиска по
               сайту</span></label>
           <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
-          <button class="search-button" type="submit" tabindex="0"><span class="search-button__text">Найти</span></button>
+          <button class="search-button" type="submit" tabindex="0"><span
+              class="search-button__text">Найти</span></button>
         </form>
 
         <ul class="user-menu list">
@@ -71,7 +72,8 @@
         </ul>
       </div>
       <nav class="site-navigation">
-        <a href="catalog.html" class="site-navigation__catalog-link extra-bold"><span class="catalog-link__text pseudo-opacity">Каталог товаров</span></a>
+        <a href="catalog.html" class="site-navigation__catalog-link extra-bold"><span
+            class="catalog-link__text pseudo-opacity">Каталог товаров</span></a>
         <ul class="site-navigation__list list">
           <li class="site-navigation__item"><a href="blank.html"
               class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
@@ -132,8 +134,23 @@
         <form class="filter__options" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset>
             <legend class="filter__category extra-bold">Стоимость</legend>
-            <label><input type="range" name="cost" step="100" min="0" max="7500" value="5000"></label>
-            <span class="filter__range-value">от 0</span><span class="filter__range-value">до 5000</span>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"> от
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price"> до
+                  <input type="number" name="max-price" value="5000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend class="filter__category extra-bold">Цвет</legend>
