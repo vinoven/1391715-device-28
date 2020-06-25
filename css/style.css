@@ -170,31 +170,25 @@ img {
   display: block;
   background-color: var(--basic-mid-grey);
   margin: 0 20px;
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.brands__item:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 .brands__item:nth-child(1) {
-  background: url(../img/content/logo-1.jpg);
-}
-.brands__item:nth-child(2) {
-  background: url(../img/content/logo-2.jpg);
-}
-.brands__item:nth-child(3) {
-  background: url(../img/content/logo-3.jpg);
-}
-.brands__item:nth-child(4) {
-  background: url(../img/content/logo-4.jpg);
-}
-
-.brands__item:nth-child(1):hover {
   background: url(../img/content/logo-1-1.jpg);
 }
-.brands__item:nth-child(2):hover {
+.brands__item:nth-child(2) {
   background: url(../img/content/logo-2-1.jpg);
 }
-.brands__item:nth-child(3):hover {
+.brands__item:nth-child(3) {
   background: url(../img/content/logo-3-1.jpg);
 }
-.brands__item:nth-child(4):hover {
+.brands__item:nth-child(4) {
   background: url(../img/content/logo-4-1.jpg);
 }
 
