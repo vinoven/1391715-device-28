@@ -339,11 +339,13 @@ img {
   text-transform: uppercase;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
   background-color: var(--basic-black);
 }
 
-.search-button:hover .search-button__text {
+.search-button:hover .search-button__text,
+.search-button:focus .search-button__text {
   color: var(--basic-white);
 }
 
