@@ -358,8 +358,7 @@ img {
   opacity: 0.3;
 }
 
-.search-field:focus + .search-button,
-.search-field:active + .search-button {
+.search:focus-within .search-button {
   display: inline-block;
   vertical-align: baseline;
 }
