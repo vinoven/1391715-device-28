@@ -321,8 +321,7 @@ img {
   opacity: 1;
 }
 
-.search-field:focus,
-.search-field:active {
+.search-field:focus {
   outline: none;
   border: none;
   border-bottom: 2px solid var(--basic-black);
