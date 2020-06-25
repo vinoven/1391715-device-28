@@ -180,16 +180,16 @@ img {
 }
 
 .brands__item:nth-child(1) {
-  background: url(../img/content/logo-1-1.jpg);
+  background-image: url(../img/content/logo-1-1.jpg);
 }
 .brands__item:nth-child(2) {
-  background: url(../img/content/logo-2-1.jpg);
+  background-image: url(../img/content/logo-2-1.jpg);
 }
 .brands__item:nth-child(3) {
-  background: url(../img/content/logo-3-1.jpg);
+  background-image: url(../img/content/logo-3-1.jpg);
 }
 .brands__item:nth-child(4) {
-  background: url(../img/content/logo-4-1.jpg);
+  background-image: url(../img/content/logo-4-1.jpg);
 }
 
 .brands__item-link {
