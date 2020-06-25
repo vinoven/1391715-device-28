@@ -567,11 +567,11 @@ img {
   opacity: 0.3;
 }
 
-.breadcrumbs__link:hover {
+.breadcrumbs__link:not(.breadcrumbs__link--current):hover {
   opacity: 0.6;
 }
 
-.breadcrumbs__link:active {
+.breadcrumbs__link:not(.breadcrumbs__link--current):active {
   opacity: 0.1;
 }
 
