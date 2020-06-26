@@ -261,15 +261,8 @@ img {
   );
 }
 
-.logo__picture {
-  width: 164px;
-  height: 35px;
-  fill: var(--basic-black);
-  vertical-align: middle;
-}
-
 .page-footer .logo__picture {
-  fill: var(--special-yellow-dark);
+  color: var(--special-yellow-dark);
 }
 
 .search-menu-container {
