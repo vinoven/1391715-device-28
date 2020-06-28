@@ -125,6 +125,12 @@ img {
   list-style: none;
 }
 
+.btn-reset-style {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
 .user-menu-sprite {
   display: none;
 }
@@ -487,12 +493,6 @@ img {
   );
 }
 
-.btn-reset-style {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-}
-
 .pseudo-opacity:hover {
   opacity: 0.6;
 }
@@ -573,12 +573,6 @@ img {
 
   margin: 0;
   padding-bottom: 40px;
-}
-
-.partners__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .partners__item {
@@ -1088,6 +1082,7 @@ img {
 .services-definition__item::after {
   content: "";
   position: absolute;
+  top: 0;
   right: 0;
 }
 
