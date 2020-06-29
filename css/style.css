@@ -703,6 +703,28 @@ img {
 .color-link {
   display: block;
   text-align: center;
+  position: relative;
+}
+
+.color-link:not(.section-navigation__item-link)::before {
+  content: "";
+  width: inherit;
+  height: 8px;
+  background-color: var(--special-yellow-dark);
+  position: absolute;
+  top: 7px;
+  left: 0;
+  transition-property: height, top;
+  transition-duration: 200ms;
+}
+
+.color-link:not(.section-navigation__item-link):hover::before {
+  height: 40px;
+  top: -9px;
+}
+
+.color-link:not(.section-navigation__item-link):active .color-link__text {
+  color: var(--decor-black-shadow-light-opacity);
 }
 
 .color-link--size-s {
@@ -721,12 +743,8 @@ img {
   width: 260px;
 }
 
-.color-link:hover {
-  background-color: var(--special-yellow-dark);
-}
-
-.color-link:active {
-  color: var(--decor-black-opacity);
+.color-link__text {
+  position: relative;
 }
 
 .page-footer {
