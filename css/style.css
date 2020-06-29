@@ -1341,15 +1341,17 @@ img {
   margin-bottom: 20px;
 }
 
-.catalog-section {
-  display: grid;
-  grid-template-columns: 320px 1fr;
+.content-section {
+  display: flex;
+}
+
+.sort-catalog-section {
+  width: 100%;
 }
 
 .filter {
-  padding-left: 60px;
-  padding-right: 60px;
-  grid-row: 1 / 4;
+  padding-left: calc(50% - 580px + 60px);
+  padding-right: 68px;
 
   background-image: linear-gradient(
     to bottom,
@@ -1407,9 +1409,8 @@ img {
 
 .check__input:focus + .check__box,
 .radio__input:focus + .radio__button {
-outline: 2px solid var(--special-green);
+  outline: 2px solid var(--special-green);
 }
-
 
 .check__input:active + .check__box,
 .radio__input:active + .radio__button {
@@ -1459,6 +1460,7 @@ outline: 2px solid var(--special-green);
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-right: calc(100% - 832px);
   background-color: var(--basic-grey-lighter);
 }
 
@@ -1510,6 +1512,7 @@ outline: 2px solid var(--special-green);
   padding-top: 70px;
   padding-bottom: 78px;
   padding-left: 70px;
+  padding-right: calc(100% - 832px);
 }
 
 .catalog-container .title {
