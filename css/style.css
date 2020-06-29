@@ -712,15 +712,16 @@ img {
   height: 8px;
   background-color: var(--special-yellow-dark);
   position: absolute;
-  top: 7px;
+  top: 0;
   left: 0;
-  transition-property: height, top;
+  transform: translateY(7px);
+  transition-property: height, transform;
   transition-duration: 200ms;
 }
 
 .color-link:not(.section-navigation__item-link):hover::before {
   height: 40px;
-  top: -9px;
+  transform: translateY(-9px);
 }
 
 .color-link:not(.section-navigation__item-link):active .color-link__text {
