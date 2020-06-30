@@ -570,7 +570,7 @@ img {
 
   background-image: linear-gradient(
     to bottom,
-    var(--special-yellow-light) 180px,
+    var(--special-yellow-light) 135px,
     var(--basic-white) 40px
   );
 }
@@ -851,9 +851,7 @@ img {
 
 .promo-slider__item {
   display: flex;
-  padding-top: 50px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 48px;
 }
 
 .promo-slider__item--inactive {
@@ -885,7 +883,7 @@ img {
   height: 7px;
   background-color: var(--basic-white);
   position: absolute;
-  top: 35px;
+  top: 40px;
 }
 
 .promo-slider__slide-number {
@@ -943,8 +941,8 @@ img {
 
 .promo-slider__slider {
   position: absolute;
-  bottom: 133px;
-  right: 100px;
+  bottom: 130px;
+  right: 80px;
 }
 
 .promo-slider__slider-item {
