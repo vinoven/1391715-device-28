@@ -1067,14 +1067,14 @@ img {
 .services-container {
   display: inline-flex;
   padding-top: 64px;
-  padding-bottom: 68px;
+  padding-bottom: 60px;
 }
 
 .services-definition {
   width: 620px;
   margin: 0;
   padding-top: 70px;
-  padding-left: 116px;
+  padding-left: 115px;
 }
 
 .services-definition__item {
@@ -1096,7 +1096,8 @@ img {
   background-image: url(../img/decor/delivery.svg);
   width: 136px;
   height: 164px;
-  top: 135px;
+  top: 133px;
+  right: 42px;
 }
 
 .services-definition__item-2::after {
@@ -1187,14 +1188,14 @@ img {
 }
 
 .section-navigation {
-  width: 290px;
+  width: 285px;
   padding-top: 80px;
   padding-bottom: 86px;
   border-right: 7px solid var(--basic-black);
 }
 
 .section-navigation__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .section-navigation__item--active {
