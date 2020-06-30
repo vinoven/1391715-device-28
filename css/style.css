@@ -285,7 +285,7 @@ img {
 }
 
 .information {
-  padding-bottom: 90px;
+  padding-bottom: 110px;
   display: flex;
   width: 100%;
   min-height: 690px;
@@ -302,8 +302,8 @@ img {
 .about h2,
 .contacts h2 {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 57px;
+  margin-bottom: 40px;
 }
 
 .about {
@@ -621,11 +621,15 @@ img {
   line-height: 28px;
 
   margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.partners__list {
+  padding-top: 20px;
 }
 
 .partners__item {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -748,8 +752,8 @@ img {
 */
 
 .page-footer {
-  padding-top: 46px;
-  padding-bottom: 31px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   background-color: var(--basic-dark);
 }
 
@@ -1229,7 +1233,7 @@ img {
 }
 
 .page-footer .user-menu__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .page-footer__container {
@@ -1237,7 +1241,7 @@ img {
 }
 
 .page-footer__address-menu-phone-container {
-  padding-top: 40px;
+  padding-top: 33px;
   padding-bottom: 33px;
   display: flex;
   justify-content: space-between;
