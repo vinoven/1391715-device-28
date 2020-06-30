@@ -948,32 +948,22 @@ img {
 }
 
 .promo-slider__slider-item {
-  width: 12px;
-  height: 12px;
-  border: 1px solid var(--basic-black);
-  border-radius: 50%;
-  padding: 0;
+  width: 23px;
+  height: 23px;
+  border: none;
   background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6' cy='6' r='5.5' stroke='black'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .promo-slider__slider-item:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 6px;
 }
 
 .promo-slider__slider-item--active {
-  position: relative;
-}
-
-.promo-slider__slider-item--active::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border: 1px solid var(--basic-black);
-  border-radius: 50%;
-  top: 2px;
-  left: 2px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6' cy='6' r='2.5' stroke='black'/%3E%3Ccircle cx='6' cy='6' r='5.5' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
 .categories__item-title {
