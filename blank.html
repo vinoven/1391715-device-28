@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Девайс - Каталог товаров</title>
+  <title>Девайс - Дополнительная страница</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style-minimized.css">
 </head>
@@ -59,8 +58,8 @@
                 <use xlink:href="#user"></use>
               </svg>Валентин Петухов</a>
           </li>
-          <li class="user-menu__item user-menu__item--login"><a href="blank.html" class="user-menu__link pseudo-opacity"
-              aria-label="Выйти">Выйти</a></li>
+          <li class="user-menu__item user-menu__item--login"><a href="blank.html"
+              class="user-menu__link pseudo-opacity--reversed" aria-label="Выйти">Выйти</a></li>
           <li class="user-menu__item"><a href="blank.html" class="user-menu__link pseudo-opacity"
               aria-label="На страницу сравнения товаров">
               <svg class="user-menu__icon" width="10" height="10">
@@ -76,8 +75,38 @@
         </ul>
       </div>
       <nav class="site-navigation">
-        <a href="catalog.html" class="site-navigation__catalog-link extra-bold"><span
-            class="catalog-link__text pseudo-opacity">Каталог товаров</span></a>
+        <div class="sub-menu-container">
+          <a href="catalog.html" class="site-navigation__catalog-link extra-bold"><span
+              class="catalog-link__text pseudo-opacity">Каталог товаров</span></a>
+          <ul class="sub-menu list">
+            <li class="sub-menu__section">
+              <ul class="sub-menu__list  list">
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Виртуальная
+                    реальность</a></li>
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Моноподы для
+                    селфи</a></li>
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-menu__section">
+              <ul class="sub-menu__list list">
+                <li class="sub-menu__item"><a href="catalog.html"
+                    class="sub-menu__link pseudo-opacity">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Умные часы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-menu__section">
+              <ul class="sub-menu__list list">
+                <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Квадрокоптер</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
         <ul class="site-navigation__list list">
           <li class="site-navigation__item"><a href="blank.html"
               class="site-navigation__link pseudo-opacity extra-bold">Доставка</a>
@@ -87,49 +116,24 @@
           </li>
           <li class="site-navigation__item"><a href="blank.html"
               class="site-navigation__link pseudo-opacity extra-bold">Контакты</a>
-          </li>
-        </ul>
-        <ul class="sub-menu  list">
-          <li class="sub-menu__section">
-            <ul class="sub-menu__list  list">
-              <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Виртуальная
-                  реальность</a></li>
-              <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Моноподы для
-                  селфи</a></li>
-              <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Экшн-камеры</a>
-              </li>
-            </ul>
-          </li>
-          <li class="sub-menu__section">
-            <ul class="sub-menu__list list">
-              <li class="sub-menu__item"><a href="catalog.html"
-                  class="sub-menu__link pseudo-opacity">Фитнес-браслеты</a>
-              </li>
-              <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Умные часы</a>
-              </li>
-            </ul>
-          </li>
-          <li class="sub-menu__section">
-            <ul class="sub-menu__list list">
-              <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link pseudo-opacity">Квадрокоптер</a>
-              </li>
-            </ul>
-          </li>
+          </li> 
         </ul>
       </nav>
 
     </header>
   </div>
   <main class="catalog-container container">
-    <h1>Дополнительная страница</h1>
-    <p>Данная страница создана как "заглушка".</p>
-    <p>
-      На данную страницу осуществляется переход со страниц index.html и catalog.html, что бы не создавать ссылки на
-      несуществующую страницу и не уходить с сайта.
-    </p>
-    <p>
-      Необходима, в виду отсутствия в макете других страниц, кроме index.html и catalog.html
-    </p>
+    <div class="inner-container">
+      <h1>Дополнительная страница</h1>
+      <p>Данная страница создана как "заглушка".</p>
+      <p>
+        На данную страницу осуществляется переход со страниц index.html и catalog.html, что бы не создавать ссылки на
+        несуществующую страницу и не уходить с сайта.
+      </p>
+      <p>
+        Необходима, в виду отсутствия в макете других страниц, кроме index.html и catalog.html
+      </p>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
@@ -158,7 +162,6 @@
               <use xlink:href="#cart"></use>
             </svg>
             <span class="pseudo-opacity--unordered">Корзина</span></a>
-        </li>
         </li>
       </ul>
       <a href="index.html" class="logo__link pseudo-opacity" aria-label="Ссылка на главную страницу">
@@ -197,9 +200,6 @@
       </div>
     </div>
   </footer>
-</body>
-
-</html>
 </body>
 
 </html>
