@@ -750,7 +750,7 @@ img {
   opacity: 1;
 }
 
-/* color-link 
+/* color-link
 Ссылки с цветным фоном и изменением прозрачности при взамодействии
 */
 
@@ -1557,8 +1557,6 @@ img {
 
 .popup-map {
   display: none;
-  width: 1000px;
-  height: 600px;
   position: fixed;
   top: 50%;
   left: 50%;
