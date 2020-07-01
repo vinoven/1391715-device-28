@@ -326,7 +326,8 @@
           </ul>
 
           <a href="blank.html" class="about__link extra-bold color-link color-link--size-xl"
-            aria-label="На страницу с информацией об интернет-магазине Device"><span class="color-link__text">Подробнее о нас</span></a>
+            aria-label="На страницу с информацией об интернет-магазине Device"><span class="color-link__text">Подробнее
+              о нас</span></a>
         </section>
 
         <section class="contacts">
@@ -412,21 +413,23 @@
 
   </footer>
 
-  <div class="popup-map popup-map--hidden">
+  <div class="popup-map">
     <div class="popup-map__container">
-      <img src="img/content/map-big-1.png" width="994" height="593"
-        alt="Офис компании - г. Москва, ул. Строителей, 15. Находится напротив Драматического театра"
-        class="popup-map__image">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCQhfIeuhC" width="960" height="560" frameborder="0" allowfullscreen></iframe>
+      <p>
+        <img src="img/content/map-big-1.png" width="960" height="560"
+          alt="Офис компании - г. Москва, ул. Строителей, 15. Находится напротив Драматического театра">
+      </p>
       <button type="button" class="popup-map__close-button close-form-btn btn-reset-style"><span
           class="visually-hidden">Закрыть всплывающее окно с
           картой</span></button>
     </div>
   </div>
 
-  <div class="feedback feedback--hidden">
+  <div class="feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <div class="feedback__form-container">
-      <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__form">
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="feedback__name-field">
           <label for="feedback-name">Ваше имя:</label>
           <input class="feedback-name feedback__form-field" type="text" name="feedback-name" id="feedback-name"
@@ -450,6 +453,9 @@
           связи</span></button>
     </div>
   </div>
+
+  <script src="js/feedback.js"></script>
+  <script src="js/popup-map.js"></script>
 
 </body>
 
