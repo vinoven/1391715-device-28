@@ -688,11 +688,11 @@ img {
   line-height: 16px;
   padding-top: 4px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .range-controls {
   padding-bottom: 16px;
-  position: relative;
 }
 
 .range-controls .scale {
@@ -706,7 +706,7 @@ img {
   background-color: var(--special-green);
 }
 
-.range-controls .toggle {
+.toggle {
   width: 4px;
   height: 4px;
   padding: 0;
@@ -716,12 +716,12 @@ img {
   box-sizing: content-box;
   box-shadow: 0 2px 2px var(--decor-black-shadow-light-opacity);
   position: absolute;
-  top: -9px;
+  top: -5px;
   left: 0;
   cursor: pointer;
 }
 
-.range-controls .toggle-max {
+.toggle-max {
   left: 114px;
 }
 

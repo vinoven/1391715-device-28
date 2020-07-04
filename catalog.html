@@ -143,16 +143,12 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price"> от
-                  <input type="number" name="min-price" min="0" value="0">
-                </label>
-                <label class="max-price"> до
-                  <input type="number" name="max-price" min="0" value="5000">
-                </label>
+                <label class="min-price toggle toggle-min" for="min-price"></label>
+                <label class="max-price  toggle toggle-max" for="max-price"></label>
+                <span>от </span><input type="number" name="min-price" id="min-price" min="0" value="0">
+                <span>до </span><input type="number" name="max-price" id="max-price" min="0" value="5000">
               </div>
             </div>
           </fieldset>
