@@ -267,16 +267,16 @@ img {
 }
 
 .brands__item:nth-child(1) {
-  background-image: url(../img/content/logo-1-1.jpg);
+  background-image: url(../img/content/logo-dji.jpg);
 }
 .brands__item:nth-child(2) {
-  background-image: url(../img/content/logo-2-1.jpg);
+  background-image: url(../img/content/logo-spgadgets.jpg);
 }
 .brands__item:nth-child(3) {
-  background-image: url(../img/content/logo-3-1.jpg);
+  background-image: url(../img/content/logo-gopro.jpg);
 }
 .brands__item:nth-child(4) {
-  background-image: url(../img/content/logo-4-1.jpg);
+  background-image: url(../img/content/logo-vive.jpg);
 }
 
 .brands__item-link {
@@ -367,7 +367,7 @@ img {
 }
 
 .search-icon {
-  background-image: url(../img/decor/search.svg);
+  background-image: url(../img/decor/icon-search.svg);
   width: 13px;
   height: 13px;
   position: absolute;
@@ -549,7 +549,7 @@ img {
 .site-navigation__catalog-link::after {
   position: absolute;
   content: "";
-  background-image: url(../img/decor/plus.svg);
+  background-image: url(../img/decor/icon-plus.svg);
   width: 16px;
   height: 16px;
   background-position: 0 0;
@@ -1313,15 +1313,15 @@ img {
 }
 
 .socials__link--facebook {
-  background-image: url(../img/decor/fb.svg);
+  background-image: url(../img/decor/icon-fb.svg);
 }
 
 .socials__link--instagram {
-  background-image: url(../img/decor/instagram.svg);
+  background-image: url(../img/decor/icon-instagram.svg);
 }
 
 .socials__link--twitter {
-  background-image: url(../img/decor/twitter.svg);
+  background-image: url(../img/decor/icon-twitter.svg);
 }
 
 .academy__picture {
