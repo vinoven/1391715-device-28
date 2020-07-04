@@ -729,6 +729,13 @@ img {
   width: 75px;
   border: none;
   background-color: transparent;
+  -moz-appearance: textfield;
+}
+
+.price-controls input::-webkit-inner-spin-button,
+.price-controls input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .sort__link {
