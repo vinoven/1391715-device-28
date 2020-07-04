@@ -364,6 +364,7 @@ img {
   display: flex;
   align-items: center;
   position: relative;
+  margin-right: 100px;
 }
 
 .search-icon {
@@ -381,6 +382,7 @@ img {
   padding: 0;
   padding-left: 40px;
   padding-bottom: 15px;
+  align-self: stretch;
 }
 
 .search-field::placeholder {
@@ -465,7 +467,7 @@ img {
 }
 
 .user-menu {
-  width: 50%;
+  min-width: 50%;
   display: flex;
   flex-wrap: wrap;
 }
