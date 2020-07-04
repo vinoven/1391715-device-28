@@ -1641,6 +1641,7 @@ img {
 
 .feedback__form-field:focus {
   outline: 2px solid var(--special-yellow-light);
+  background-color: var(--basic-white);
 }
 
 .feedback__form-field:invalid {
