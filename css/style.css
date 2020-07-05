@@ -135,12 +135,12 @@ img {
   display: none;
 }
 
-.pseudo-opacity:hover {
+.pseudo-opacity[href]:hover {
   opacity: 0.6;
 }
 
-.pseudo-opacity:active,
-.pseudo-opacity:focus {
+.pseudo-opacity[href]:active,
+.pseudo-opacity[href]:focus {
   opacity: 0.3;
 }
 
@@ -543,22 +543,17 @@ img {
 }
 
 .site-navigation__catalog-link {
-  position: relative;
-  padding-right: 20px;
+  padding-right: 18px;
   letter-spacing: 0.1em;
 }
 
-.site-navigation__catalog-link::after {
-  position: absolute;
-  content: "";
-  background-image: url(../img/decor/icon-plus.svg);
-  width: 16px;
-  height: 16px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.icon-plus {
   opacity: 0.3;
-  top: 3px;
-  left: 100%;
+}
+
+.sub-menu-container {
+  display: flex;
+  align-items: center;
 }
 
 .sub-menu-container:hover .sub-menu,
@@ -906,7 +901,7 @@ img {
 .promo-slider__slide-number {
   font-size: 179px;
   line-height: 195px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   color: var(--basic-white);
   align-self: flex-end;
   margin: 0;
