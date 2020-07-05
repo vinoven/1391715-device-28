@@ -1360,6 +1360,10 @@ img {
   margin-bottom: 20px;
 }
 
+.sub-menu__link--current {
+  opacity: 0.6;
+}
+
 .content-section {
   display: flex;
 }
