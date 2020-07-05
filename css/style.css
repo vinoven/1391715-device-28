@@ -598,8 +598,8 @@ img {
 .breadcrumbs__item:not(:last-child)::after {
   content: url("../img/decor/nav-arrow.svg");
 
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 17px;
+  padding-right: 19px;
 }
 
 .breadcrumbs__link {
