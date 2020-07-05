@@ -7,6 +7,10 @@ var feedbackName = document.querySelector(".feedback-name");
 var feedbackEmail = document.querySelector(".feedback-email");
 var feedbackText = document.querySelector(".feedback-text");
 
+var map = document.querySelector(".popup-map");
+var mapLink = document.querySelector(".contacts__map-link");
+var mapCloseButton = document.querySelector(".popup-map__close-button");
+
 var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
@@ -74,6 +78,31 @@ feedbackForm.addEventListener("submit", function (evt) {
     if (isStorageSupport) {
       localStorage.setItem("name", feedbackName.value);
       localStorage.setItem("email", feedbackEmail.value);
+    }
+  }
+});
+
+// Отображеие карты
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.add("modal--show");
+});
+
+// Закрытие формы обратной связи
+
+mapCloseButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.remove("modal--show");
+});
+
+// Закрытие формы по Esc
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (map.classList.contains("modal--show")) {
+      evt.preventDefault();
+      map.classList.remove("modal--show");
     }
   }
 });
