@@ -217,9 +217,9 @@ img {
 }
 
 .container {
-  width: 1240px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .inner-container {
@@ -248,6 +248,14 @@ img {
   opacity: 0.2;
   background-color: var(--basic-mid-grey);
   filter: grayscale(1);
+}
+
+.brands__item:first-child {
+  margin-left: 0;
+}
+
+.brands__item:last-child {
+  margin-right: 0;
 }
 
 .brands__item:hover {
