@@ -1095,7 +1095,7 @@ img {
 
 .services-definition__item-1::after {
   top: 133px;
-  right: 42px;
+  right: 22px;
   width: 136px;
   height: 164px;
   background-image: url(../img/decor/delivery.svg);
@@ -1478,8 +1478,8 @@ img {
 
 .sort__title {
   margin: 0;
-  margin-right: 75px;
-  margin-left: 70px;
+  margin-right: 73px;
+  margin-left: 72px;
 }
 
 .sort__list {
